@@ -5,7 +5,7 @@ label {
   color: var(--dark-grey);
 }
 
-svg {
+svg,i {
   font-size: 1.75rem !important;
   cursor: pointer;
 }
@@ -14,7 +14,12 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 h3,
+div,
 input {
   font-size: 1.6rem;
 }

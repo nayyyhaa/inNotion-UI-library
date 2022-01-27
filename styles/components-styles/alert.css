@@ -85,3 +85,10 @@
   transform: translateX(10rem);
   opacity: 0.3;
 }
+
+/* media queries */
+@media screen and (max-width: 400px) {
+  .alert-box {
+    justify-content: center;
+  }
+}
