@@ -5,7 +5,8 @@ label {
   color: var(--dark-grey);
 }
 
-svg,i {
+svg,
+i {
   font-size: 1.75rem !important;
   cursor: pointer;
 }
@@ -48,7 +49,7 @@ a {
 }
 
 .colored-txt {
-  color: var(--sat-primary-color);
+  color: var(--sat-COLOR-PRIMARY-LIGHT);
 }
 
 .wt-text {

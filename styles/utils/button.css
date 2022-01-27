@@ -8,10 +8,10 @@ button {
   padding: 1rem 1.5rem;
   border-radius: 0.2rem;
   color: white;
-  background: var(--primary-color-dark);
+  background: var(--COLOR-PRIMARY-DARK);
   transition: all 0.1s ease-in;
 }
 
 .primary-btn:hover {
-  background: var(--primary-color-xdark);
+  background: var(--COLOR-PRIMARY-XDARK);
 }

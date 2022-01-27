@@ -4,9 +4,9 @@
   height: 100%;
   font-size: 1.6rem;
   border-radius: 0.4rem;
-  background: var(--primary-color-light);
-  border: 0.15rem solid var(--primary-color-dark);
-  color: var(--primary-color-dark);
+  background: var(--COLOR-PRIMARY-LIGHT);
+  border: 0.15rem solid var(--COLOR-PRIMARY-DARK);
+  color: var(--COLOR-PRIMARY-DARK);
   justify-content: space-between;
 }
 
@@ -20,59 +20,59 @@
 }
 
 .action-link:hover {
-  background: var(--grey-light-trans);
+  background: var(--COLOR-GREY-TRANS);
 }
 
 .action-close:hover {
   cursor: pointer;
-  background: var(--grey-light-trans);
+  background: var(--COLOR-GREY-TRANS);
 }
 
 .info-alert {
-  background: var(--blue-xlight);
-  border: 0.15rem solid var(--blue);
-  color: var(--blue);
+  background: var(--BLUE-XLIGHT);
+  border: 0.15rem solid var(--BLUE);
+  color: var(--BLUE);
 }
 
 .success-alert {
-  background: var(--green-light);
-  border: 0.15rem solid var(--green);
-  color: var(--green);
+  background: var(--GREEN-LIGHT);
+  border: 0.15rem solid var(--GREEN);
+  color: var(--GREEN);
 }
 
 .warning-alert {
-  background: var(--yellow-light);
-  border: 0.15rem solid var(--yellow);
-  color: var(--yellow);
+  background: var(--YELLOW-LIGHT);
+  border: 0.15rem solid var(--YELLOW);
+  color: var(--YELLOW);
 }
 
 .error-alert {
-  background: var(--red-light);
-  border: 0.15rem solid var(--red);
-  color: var(--red);
+  background: var(--RED-LIGHT);
+  border: 0.15rem solid var(--RED);
+  color: var(--RED);
 }
 
 /*filled*/
 
 .filled-alert {
-  background: var(--primary-color-dark);
+  background: var(--COLOR-PRIMARY-DARK);
   color: white;
 }
 
 .filled-alert.info-alert {
-  background: var(--blue);
+  background: var(--BLUE);
 }
 
 .filled-alert.success-alert {
-  background: var(--green);
+  background: var(--GREEN);
 }
 
 .filled-alert.warning-alert {
-  background: var(--yellow);
+  background: var(--YELLOW);
 }
 
 .filled-alert.error-alert {
-  background: var(--red);
+  background: var(--RED);
 }
 
 /*transition*/
