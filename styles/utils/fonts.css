@@ -49,7 +49,7 @@ a {
 }
 
 .colored-txt {
-  color: var(--sat-COLOR-PRIMARY-LIGHT);
+  color: var(COLOR-PRIMARY-SAT);
 }
 
 .wt-text {
