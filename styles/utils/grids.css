@@ -1,0 +1,9 @@
+.grid-ctr {
+  display: grid;
+  place-items: center;
+}
+
+.grid-resp-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}

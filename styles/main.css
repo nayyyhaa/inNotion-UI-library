@@ -1,0 +1,73 @@
+/* UTILS */
+
+@import url("utils/container.css");
+@import url("utils/flex.css");
+@import url("utils/grids.css");
+@import url("utils/fonts.css");
+@import url("utils/lists.css");
+@import url("utils/button.css");
+@import url("utils/utilities.css");
+@import url("utils/gutter.css");
+@import url("utils/width.css");
+
+/* COMPONENTS */
+
+@import url("components-styles/alert.css");
+@import url("components-styles/avatar.css");
+
+:root {
+  --COLOR-PRIMARY-XXLIGHT: #f1f0ff;
+  --COLOR-PRIMARY-XLIGHT: #e1dafd;
+  --COLOR-PRIMARY-LIGHT: #c7b9ff;
+  --COLOR-PRIMARY: #7b61ff;
+  --COLOR-PRIMARY-TRANS: rgba(149, 132, 250, 0.72);
+  --COLOR-PRIMARY-DARK: rgb(76 63 181);
+  --COLOR-PRIMARY-XDARK: #352a6b;
+  --COLOR-PRIMARY-SAT: #9a47ff;
+  --COLOR-GREY-TRANS: rgba(240, 238, 238, 0.342);
+  --COLOR-GREY-DARK: rgb(90, 90, 90);
+  --COLOR-GREY-XDARK: #333;
+  --RED: rgb(255, 77, 77);
+  --RED-LIGHT: #fdeded;
+  --BLUE: #495ed1;
+  --BLUE-LIGHT: #699bf7;
+  --BLUE-XLIGHT: #bfd5fd;
+  --YELLOW: #ca9606;
+  --YELLOW-LIGHT: #fdfae0;
+  --GREEN: #4a8838;
+  --GREEN-LIGHT: #c6f5d0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  color: var(--COLOR-GREY-XDARK);
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+.red-bg {
+  background: var(--RED);
+}
+
+.yellow-bg {
+  background: var(--YELLOW);
+}
+
+.green-bg {
+  background: var(--GREEN);
+}
+
+.blue-bg {
+  background: var(--BLUE);
+}

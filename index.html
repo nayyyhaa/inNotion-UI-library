@@ -6,7 +6,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="in-notion.css" />
+    <script src="app.js" defer></script>
     <title>inNotion UI Library | Home</title>
   </head>
-  <body></body>
+  <body>
+    <main class="centered-text">
+      <!-- Avatar Demo -->
+      <h1 class="m-2">Avatar Components</h1>
+      <div class="container colored-container col-flex">
+        <!-- Image Avatar -->
+        <h2>Image Avatar</h2>
+        <div class="demo w-60p row-flex">
+          <div class="avatar sm-avatar box-shd m-v-1">
+            <img src="assets/user1.jpg" alt="user" />
+          </div>
+          <div class="avatar md-avatar box-shd m-v-1">
+            <img src="assets/user2.jpg" alt="user" />
+          </div>
+          <div class="avatar lg-avatar box-shd m-v-1">
+            <img src="assets/user3.jpg" alt="user" />
+          </div>
+          <div class="avatar xlg-avatar box-shd m-v-1">
+            <img src="assets/user4.jpg" alt="user" />
+          </div>
+        </div>
+
+        <!-- Text Avatar -->
+        <h2>Text Avatar</h2>
+        <div class="demo w-60p row-flex">
+          <div class="avatar grid-ctr sm-avatar box-shd m-v-1">NG</div>
+          <div class="avatar grid-ctr md-avatar box-shd m-v-1">NG</div>
+          <div class="avatar grid-ctr lg-avatar box-shd m-v-1">NG</div>
+          <div class="avatar grid-ctr xlg-avatar box-shd m-v-1">NG</div>
+        </div>
+
+        <!-- Icon Avatar -->
+        <h2>Icon Avatar</h2>
+        <div class="demo w-60p row-flex">
+          <div class="avatar grid-ctr sm-avatar box-shd m-v-1"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+          <div class="avatar grid-ctr md-avatar box-shd m-v-1"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+          <div class="avatar grid-ctr lg-avatar box-shd m-v-1"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+          <div class="avatar grid-ctr xlg-avatar box-shd m-v-1">
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alert Demo -->
+      <h1 class="m-2">Alert Components</h1>
+      <div class="container colored-container col-flex">
+        <!-- Default Alerts -->
+        <h2 class="m-v-2">Default Alerts</h2>
+        <div class="demo w-95p row-flex">
+          <div class="alert-box primary-alert row-flex m-1 p-1">
+            <div class="alert-msg">This is a primary alert!</div>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="action-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="alert-box info-alert row-flex m-1 p-1">
+            <div class="alert-msg">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+              This is an info alert — check it out!
+            </div>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="action-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="alert-box success-alert row-flex m-1 p-1">
+            <div class="alert-msg">
+              <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+              This is an success alert — check it out!
+            </div>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="action-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="alert-box warning-alert row-flex m-1 p-1">
+            <div class="alert-msg">
+              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+              This is an warning alert — check it out!
+            </div>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="action-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="alert-box error-alert row-flex m-1 p-1">
+            <div class="alert-msg">
+              <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+              This is a error alert — check it out!
+            </div>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="action-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filled Alerts -->
+        <h2 class="m-v-2">Filled Alerts</h2>
+        <div class="demo w-95p row-flex">
+          <div class="alert-box filled-alert primary-alert row-flex m-1 p-1">
+            <div class="alert-msg">This is a primary alert!</div>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="action-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="alert-box filled-alert info-alert row-flex m-1 p-1">
+            <div class="alert-msg">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+              This is an info alert — check it out!
+            </div>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="action-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="alert-box filled-alert success-alert row-flex m-1 p-1">
+            <div class="alert-msg">
+              <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+              This is an success alert — check it out!
+            </div>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="action-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="alert-box filled-alert warning-alert row-flex m-1 p-1">
+            <div class="alert-msg">
+              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+              This is an warning alert — check it out!
+            </div>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="action-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="alert-box filled-alert error-alert row-flex m-1 p-1">
+            <div class="alert-msg">
+              <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+              This is a error alert — check it out!
+            </div>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="action-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Example Alert -->
+        <h2 class="m-v-2">Demo Transition Alert</h2>
+        <div class="demo w-95p row-flex">
+          <div class="alert-box transition-alert success-alert row-flex m-1 p-1">
+            <div class="alert-msg">
+              <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+              This is an success alert — check it out!
+            </div>
+            <div class="alert-action">
+              <i class="action-close demo-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <button class="primary-btn reopen-alert">Reopen</button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

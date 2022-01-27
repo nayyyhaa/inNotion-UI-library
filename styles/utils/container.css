@@ -1,0 +1,35 @@
+.container {
+  background: white;
+  min-height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0 2rem;
+  margin: 5rem;
+  padding: 2rem 0.25rem;
+}
+
+.sm-container {
+  background: white;
+  width: 25rem;
+  align-items: flex-start;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+.colored-container {
+  background: var(--COLOR-PRIMARY-XLIGHT);
+}
+
+.container-title {
+  margin: 1vh 0;
+  min-height: 8vh;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 1rem 0.25rem;
+  }
+}

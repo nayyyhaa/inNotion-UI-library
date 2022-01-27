@@ -1,0 +1,61 @@
+sub,
+label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--dark-grey);
+}
+
+svg,
+i {
+  font-size: 1.75rem !important;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3,
+div,
+input {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  letter-spacing: 0.0125em;
+}
+
+span,
+li,
+a {
+  font-size: 1.5rem;
+}
+
+.h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+}
+
+.h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+}
+
+.colored-txt {
+  color: var(COLOR-PRIMARY-SAT);
+}
+
+.wt-text {
+  color: white;
+}
+
+.up-case {
+  text-transform: uppercase;
+}

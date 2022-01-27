@@ -1,0 +1,97 @@
+/* MARGINS */
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.m-v-1 {
+  margin: 1rem 0;
+}
+
+.m-v-2 {
+  margin: 2rem 0;
+}
+
+.m-v-3 {
+  margin: 3rem 0;
+}
+
+.m-v-4 {
+  margin: 4rem 0;
+}
+
+.m-h-1 {
+  margin: 0 1rem;
+}
+
+.m-h-2 {
+  margin: 0 2rem;
+}
+
+.m-h-3 {
+  margin: 0 3rem;
+}
+
+.m-h-4 {
+  margin: 0 4rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.p-v-1 {
+  padding: 1rem 0;
+}
+
+.p-v-2 {
+  padding: 2rem 0;
+}
+
+.p-v-3 {
+  padding: 3rem 0;
+}
+
+.p-v-4 {
+  padding: 4rem 0;
+}
+
+.p-h-1 {
+  padding: 0 1rem;
+}
+
+.p-h-2 {
+  padding: 0 2rem;
+}
+
+.p-h-3 {
+  padding: 0 3rem;
+}
+
+.p-h-4 {
+  padding: 0 4rem;
+}
