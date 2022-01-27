@@ -1,0 +1,87 @@
+.alert-box {
+  min-width: auto;
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  border-radius: 0.4rem;
+  background: var(--primary-color-light);
+  border: 0.15rem solid var(--primary-color-dark);
+  color: var(--primary-color-dark);
+  justify-content: space-between;
+}
+
+.action-link {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  padding: 0.6rem 0.4rem;
+}
+
+.action-link:hover {
+  background: var(--grey-light-trans);
+}
+
+.action-close:hover {
+  cursor: pointer;
+  background: var(--grey-light-trans);
+}
+
+.info-alert {
+  background: var(--blue-xlight);
+  border: 0.15rem solid var(--blue);
+  color: var(--blue);
+}
+
+.success-alert {
+  background: var(--green-light);
+  border: 0.15rem solid var(--green);
+  color: var(--green);
+}
+
+.warning-alert {
+  background: var(--yellow-light);
+  border: 0.15rem solid var(--yellow);
+  color: var(--yellow);
+}
+
+.error-alert {
+  background: var(--red-light);
+  border: 0.15rem solid var(--red);
+  color: var(--red);
+}
+
+/*filled*/
+
+.filled-alert {
+  background: var(--primary-color-dark);
+  color: white;
+}
+
+.filled-alert.info-alert {
+  background: var(--blue);
+}
+
+.filled-alert.success-alert {
+  background: var(--green);
+}
+
+.filled-alert.warning-alert {
+  background: var(--yellow);
+}
+
+.filled-alert.error-alert {
+  background: var(--red);
+}
+
+/*transition*/
+
+.transition-alert {
+  transition: all 0.2s ease;
+}
+
+.removeTransition {
+  transform: translateX(10rem);
+  opacity: 0.3;
+}
