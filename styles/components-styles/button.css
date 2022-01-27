@@ -1,0 +1,93 @@
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.btn {
+  border-radius: 0.4rem;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/** Primay Button **/
+
+.primary-btn { 
+  background: var(--COLOR-PRIMARY);
+}
+
+.primary-outline-btn {
+  background: unset;
+  border: 0.2rem solid var(--COLOR-PRIMARY);
+  color: var(--COLOR-PRIMARY);
+}
+
+.primary-outline-btn:hover {
+  background: var(--COLOR-PRIMARY);
+  color: white;
+}
+
+.primary-link-btn {
+  background: unset;
+  font-weight: 600;
+  padding: 0.25rem 0;
+  border-radius: 0;
+  color: var(--GREY-DARK);
+  border-bottom: 0.2rem solid var(--COLOR-PRIMARY);
+}
+
+.primary-link-btn:hover {
+  color: var(--COLOR-PRIMARY-DARK);
+}
+
+.primary-icon-btn {
+  background: initial;
+  color: var(--COLOR-PRIMARY);
+}
+
+/** colored buttons **/
+
+.info-btn {
+  background: var(--BLUE-XLIGHT);
+  border: 0.15rem solid var(--BLUE);
+  color: var(--BLUE);
+}
+
+.success-btn {
+  background: var(--GREEN-LIGHT);
+  border: 0.15rem solid var(--GREEN);
+  color: var(--GREEN);
+}
+
+.warning-btn {
+  background: var(--YELLOW-LIGHT);
+  border: 0.15rem solid var(--YELLOW);
+  color: var(--YELLOW);
+}
+
+.error-btn {
+  background: var(--RED-LIGHT);
+  border: 0.15rem solid var(--RED);
+  color: var(--RED);
+}
+
+/** feature buttons **/
+
+.floating-btn {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  z-index: 2;
+}
+
+.disabled-btn {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+

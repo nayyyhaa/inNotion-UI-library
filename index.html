@@ -43,7 +43,9 @@
         <!-- Icon Avatar -->
         <h2>Icon Avatar</h2>
         <div class="demo w-60p row-flex">
-          <div class="avatar grid-ctr sm-avatar box-shd m-v-1"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>
+          <div class="avatar grid-ctr sm-avatar box-shd m-v-1">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </div>
           <div class="avatar grid-ctr md-avatar box-shd m-v-1"><i class="fa fa-envelope" aria-hidden="true"></i></div>
           <div class="avatar grid-ctr lg-avatar box-shd m-v-1"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
           <div class="avatar grid-ctr xlg-avatar box-shd m-v-1">
@@ -171,7 +173,137 @@
               <i class="action-close demo-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
             </div>
           </div>
-          <button class="primary-btn reopen-alert">Reopen</button>
+          <button class="btn primary-btn reopen-alert">Reopen</button>
+        </div>
+      </div>
+
+      <!-- Badge Demo -->
+      <h1 class="m-2">Badge Components</h1>
+      <div class="container colored-container col-flex">
+        <!-- Badge on Avatar -->
+        <h2 class="m-3">Badge on Avatar</h2>
+        <div class="demo w-60p row-flex">
+          <div class="badge-wrapper avatar sm-avatar box-shd m-v-1">
+            <img class="rd-bdr" src="assets/user1.jpg" alt="user" />
+            <span class="badge sm-badge badge-br wt-text grid-ctr red-bg"></span>
+          </div>
+          <div class="badge-wrapper avatar md-avatar grid-ctr box-shd m-v-1">
+            NG
+            <span class="badge md-badge badge-br wt-text grid-ctr yellow-bg"></span>
+          </div>
+          <div class="badge-wrapper avatar lg-avatar box-shd m-v-1">
+            <img class="rd-bdr" src="assets/default-user.png" alt="user" />
+            <span class="badge badge-br wt-text grid-ctr green-bg"></span>
+          </div>
+          <div class="badge-wrapper avatar xlg-avatar box-shd m-v-1">
+            <img class="rd-bdr" src="assets/user4.jpg" alt="user" />
+            <span class="badge lg-badge badge-br wt-text grid-ctr wt-bg">X</span>
+          </div>
+        </div>
+
+        <!-- Badge on Icons -->
+        <h2 class="m-3">Badge on Icons</h2>
+        <div class="demo w-60p row-flex">
+          <button class="badge-wrapper primary-icon-btn m-v-1">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            <span class="badge wt-text grid-ctr blue-bg">19+</span>
+          </button>
+          <button class="badge-wrapper primary-icon-btn m-v-1">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span class="badge wt-text grid-ctr blue-bg">19+</span>
+          </button>
+          <button class="badge-wrapper primary-icon-btn m-v-1">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <span class="badge wt-text grid-ctr blue-bg">19+</span>
+          </button>
+        </div>
+
+        <!-- Badge on Button -->
+        <h2 class="m-3">Badge on Button</h2>
+        <div class="demo w-60p row-flex">
+          <button class="badge-wrapper btn-badge btn primary-btn m-2">
+            Button
+            <span class="badge wt-text grid-ctr blue-bg">99+</span>
+          </button>
+          <button class="badge-wrapper btn-badge toogle-badge-btn btn primary-btn m-2">
+            Toggle Badge
+            <span class="badge wt-text grid-ctr red-bg">9</span>
+          </button>
+          <button class="badge-wrapper btn-badge toogle-icon-badge-btn btn primary-btn m-2">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <span class="badge badge-tl wt-text grid-ctr green-bg">14</span>
+          </button>
+        </div>
+
+        <!-- Badge w/ Text -->
+        <h2 class="m-3">Badge w/ Text</h2>
+        <div class="demo w-95p col-flex flex-start left-text">
+          <h1 class="badge-wrapper m-2">
+            Text heading with a large badge
+            <span class="badge lg-badge txt-badge wt-text grid-ctr blue-bg">NEW</span>
+          </h1>
+          <h2 class="badge-wrapper m-2">
+            Text heading with a medium badge
+            <span class="badge md-badge txt-badge wt-text grid-ctr blue-bg">NEW</span>
+          </h2>
+          <h6 class="badge-wrapper m-2">
+            Text heading with a small badge
+            <span class="badge sm-badge txt-badge wt-text grid-ctr blue-bg">NEW</span>
+          </h6>
+          <p class="badge-wrapper m-2">
+            Paragraph heading with a default badge
+            <span class="badge txt-badge wt-text grid-ctr blue-bg">NEW</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Button Demo -->
+      <h1 class="m-2">Button Components</h1>
+      <div class="container colored-container col-flex">
+        <!-- Primary Buttons -->
+        <h2 class="m-3">Primary Buttons</h2>
+        <div class="demo w-80p row-flex">
+          <button class="btn primary-btn m-1">Primary Button</button>
+          <button class="btn primary-outline-btn m-1">Primary Outline</button>
+          <button class="btn primary-link-btn m-1">Primary Link</button>
+          <button class="btn primary-icon-btn m-1"><i class="fa fa-envelope-open" aria-hidden="true"></i></button>
+          <button class="btn primary-btn m-1">
+            <i class="fa fa-heart" aria-hidden="true"></i><span class="p-l-1">Button w/ icon</span>
+          </button>
+        </div>
+
+        <!-- Colored Buttons -->
+        <h2 class="m-3">Colored Buttons</h2>
+        <div class="demo w-80p row-flex">
+          <button class="btn error-btn m-1">Error</button>
+          <button class="btn info-btn m-1">Info</button>
+          <button class="btn warning-btn m-1">Warning</button>
+          <button class="btn success-btn m-1">Success</button>
+          <button class="btn blue-bg">
+            <span class="p-r-1">Send</span><i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <!-- Disabled Buttons -->
+        <h2 class="m-3">Disabled Buttons</h2>
+        <div class="demo w-80p row-flex">
+          <button class="btn primary-btn disabled-btn m-1">Primary Button</button>
+          <button class="btn primary-outline-btn disabled-btn m-1">Primary Outline</button>
+          <button class="btn primary-link-btn disabled-btn m-1">Primary Link</button>
+          <button class="btn primary-icon-btn disabled-btn m-1">
+            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+          </button>
+          <button class="btn blue-bg disabled-btn">
+            <span class="p-r-1">Send</span><i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <!-- Floating Action Buttons -->
+        <h2 class="m-3">Floating Action Button</h2>
+        <div class="demo w-80p row-flex">
+          <button class="btn primary-btn floating-btn grid-ctr m-1">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
     </main>

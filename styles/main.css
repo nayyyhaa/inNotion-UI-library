@@ -5,7 +5,6 @@
 @import url("utils/grids.css");
 @import url("utils/fonts.css");
 @import url("utils/lists.css");
-@import url("utils/button.css");
 @import url("utils/utilities.css");
 @import url("utils/gutter.css");
 @import url("utils/width.css");
@@ -14,12 +13,14 @@
 
 @import url("components-styles/alert.css");
 @import url("components-styles/avatar.css");
+@import url("components-styles/badge.css");
+@import url("components-styles/button.css");
 
 :root {
   --COLOR-PRIMARY-XXLIGHT: #f1f0ff;
   --COLOR-PRIMARY-XLIGHT: #e1dafd;
   --COLOR-PRIMARY-LIGHT: #c7b9ff;
-  --COLOR-PRIMARY: #7b61ff;
+  --COLOR-PRIMARY: #7161ff;
   --COLOR-PRIMARY-TRANS: rgba(149, 132, 250, 0.72);
   --COLOR-PRIMARY-DARK: rgb(76 63 181);
   --COLOR-PRIMARY-XDARK: #352a6b;

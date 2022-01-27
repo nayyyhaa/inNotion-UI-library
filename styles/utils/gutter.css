@@ -95,3 +95,11 @@
 .p-h-4 {
   padding: 0 4rem;
 }
+
+.p-r-1 {
+  padding-right: 1rem;
+}
+
+.p-l-1 {
+  padding-left: 1rem;
+}
