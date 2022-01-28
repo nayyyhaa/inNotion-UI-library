@@ -5,8 +5,8 @@
 
 .badge {
   background: var(--COLOR-GREY-DARK);
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   position: absolute;
   bottom: 60%;
