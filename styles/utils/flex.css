@@ -12,3 +12,8 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+.flex-start {
+  justify-content: start;
+  align-items: start;
+}

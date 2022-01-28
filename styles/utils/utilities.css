@@ -25,3 +25,15 @@ a {
 .centered-text {
   text-align: center;
 }
+
+.left-text {
+  text-align: left;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
