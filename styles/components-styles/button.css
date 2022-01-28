@@ -20,6 +20,11 @@ button {
   background: var(--COLOR-PRIMARY);
 }
 
+.primary-btn:hover { 
+  background: var(--COLOR-PRIMARY-DARK-TRANS);
+  opacity: 1;
+}
+
 .primary-outline-btn {
   background: unset;
   border: 0.2rem solid var(--COLOR-PRIMARY);
