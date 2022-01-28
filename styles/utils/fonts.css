@@ -1,8 +1,12 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500&display=swap");
+
 sub,
-label {
+label,
+.h6 {
   font-size: 1.3rem;
   font-weight: 500;
-  color: var(--dark-grey);
+  color: var(--COLOR-GREY-DARK);
 }
 
 svg,
@@ -26,6 +30,12 @@ button {
   font-size: 1.6rem;
 }
 
+small {
+  font-size: 1.1rem;
+  color: var(--COLOR-GREY-DARK);
+  font-weight: 200;
+}
+
 p {
   font-size: 1.6rem;
   letter-spacing: 0.0125em;
@@ -37,10 +47,21 @@ a {
   font-size: 1.5rem;
 }
 
-.h3 {
-  font-size: 2.2rem;
+.h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: 3rem;
   font-weight: 500;
-  letter-spacing: 0.0125em;
+}
+
+.h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.8rem;
 }
 
 .h5 {
@@ -50,7 +71,7 @@ a {
 }
 
 .colored-txt {
-  color: var(COLOR-PRIMARY-SAT);
+  color: var(--COLOR-PRIMARY-SAT);
 }
 
 .wt-text {
@@ -59,4 +80,8 @@ a {
 
 .up-case {
   text-transform: uppercase;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px var(--BLACK-TRANS);
 }
