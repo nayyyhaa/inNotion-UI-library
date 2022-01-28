@@ -7,7 +7,7 @@
 @import url("utils/lists.css");
 @import url("utils/utilities.css");
 @import url("utils/gutter.css");
-@import url("utils/width.css");
+@import url("utils/size.css");
 
 /* COMPONENTS */
 
@@ -15,6 +15,7 @@
 @import url("components-styles/avatar.css");
 @import url("components-styles/badge.css");
 @import url("components-styles/button.css");
+@import url("components-styles/card.css");
 
 :root {
   --COLOR-PRIMARY-XXLIGHT: #f1f0ff;
@@ -39,6 +40,8 @@
   --YELLOW-LIGHT: #fdfae0;
   --GREEN: #4a8838;
   --GREEN-LIGHT: #c6f5d0;
+  --NO-COLOR: rgba(255, 255, 255, 0);
+  --BLACK-TRANS: rgb(0 0 0 / 65%);
 }
 
 * {
@@ -69,4 +72,8 @@ main {
 
 .blue-bg {
   background: var(--BLUE);
+}
+
+.red-txt{
+  color: var(--RED)
 }
