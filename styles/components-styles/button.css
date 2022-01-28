@@ -16,11 +16,11 @@ button {
 
 /** Primay Button **/
 
-.primary-btn { 
+.primary-btn {
   background: var(--COLOR-PRIMARY);
 }
 
-.primary-btn:hover { 
+.primary-btn:hover {
   background: var(--COLOR-PRIMARY-DARK-TRANS);
   opacity: 1;
 }
@@ -101,4 +101,9 @@ button {
   background: inherit;
 }
 
-
+@media screen and (max-width: 350px) {
+  .icon-btn {
+    width: 3rem;
+    height: 3rem;
+  }
+}

@@ -22,11 +22,12 @@
   --COLOR-PRIMARY-LIGHT: #c7b9ff;
   --COLOR-PRIMARY: #7161ff;
   --COLOR-PRIMARY-TRANS: rgba(149, 132, 250, 0.72);
-  --COLOR-PRIMARY-DARK-TRANS: rgba(137, 116, 255, 0.72);
+  --COLOR-PRIMARY-DARK-TRANS: rgba(98, 81, 228, 0.76);
   --COLOR-PRIMARY-DARK: rgb(76 63 181);
   --COLOR-PRIMARY-XDARK: #352a6b;
   --COLOR-PRIMARY-SAT: #9a47ff;
   --COLOR-GREY-TRANS: rgba(240, 238, 238, 0.342);
+  --COLOR-GREY: rgb(230, 228, 228);
   --COLOR-GREY-DARK: rgb(90, 90, 90);
   --COLOR-GREY-XDARK: #333;
   --RED: rgb(255, 77, 77);
@@ -46,11 +47,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 62.5%;
-}
-
-html {
   font-family: "Poppins", sans-serif;
-  color: var(--COLOR-GREY-XDARK);
 }
 
 main {
