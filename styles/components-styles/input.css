@@ -1,4 +1,4 @@
-input:not([type=radio]):not([type=checkbox]),
+.input,
 select,
 textarea,
 option {
@@ -8,12 +8,7 @@ option {
   outline: none;
   text-overflow: ellipsis;
   width: 100%;
-}
-
-input:not([type=radio]):not([type=checkbox]) {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  background: white;
 }
 
 input:focus,
