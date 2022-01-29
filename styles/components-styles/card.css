@@ -76,12 +76,13 @@
 
 .card-icon-btn {
   padding: 0.4rem;
-  color: rgb(99, 99, 99);
+  color: var(--COLOR-GREY-DARK);
   border-radius: 50%;
 }
 
 .card-btn:hover,
 .card-icon-btn:hover {
+  color: var(--COLOR-PRIMARY);
   background: var(--COLOR-PRIMARY-XLIGHT);
 }
 
@@ -109,6 +110,7 @@
 }
 
 .close-btn:hover {
+  color: var(--RED);
   background: var(--RED-LIGHT);
 }
 

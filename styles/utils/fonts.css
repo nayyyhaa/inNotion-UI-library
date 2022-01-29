@@ -1,5 +1,4 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500&family=Lato:wght@300;400;700&display=swap");
 
 sub,
 label,
@@ -9,6 +8,10 @@ label,
   color: var(--COLOR-GREY-DARK);
 }
 
+label {
+  font-weight: 700;
+}
+
 svg,
 i {
   font-size: 1.75rem !important;
@@ -16,24 +19,26 @@ i {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3,
 div,
 input,
+select,
+option,
+textarea,
 button {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 small {
   font-size: 1.1rem;
   color: var(--COLOR-GREY-DARK);
-  font-weight: 200;
 }
 
 p {
@@ -59,9 +64,7 @@ a {
 
 .h3 {
   font-size: 2.1rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  line-height: 1.8rem;
+  font-weight: 600;
 }
 
 .h5 {
@@ -70,8 +73,13 @@ a {
   letter-spacing: 0.0125em;
 }
 
+.form-alert {
+  font-size: 1.3rem;
+}
+
 .colored-txt {
-  color: var(--COLOR-PRIMARY-SAT);
+  color: var(--COLOR-PRIMARY);
+  font-weight: 550;
 }
 
 .wt-text {

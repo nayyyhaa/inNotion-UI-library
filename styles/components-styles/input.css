@@ -1,0 +1,76 @@
+.input,
+select,
+textarea,
+option {
+  border: 0.1rem solid var(--COLOR-GREY);
+  color: var(--COLOR-GREY-DARK);
+  border-radius: 6px;
+  outline: none;
+  text-overflow: ellipsis;
+  width: 100%;
+  background: white;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--COLOR-PRIMARY);
+}
+
+select {
+  cursor: pointer;
+}
+
+.field {
+  text-align: left;
+  align-items: start;
+}
+
+.reset-ip {
+  -webkit-appearance: searchfield;
+  -moz-appearance: searchfield;
+  appearance: searchfield;
+}
+
+.disabled-ip {
+  background: var(--COLOR-GREY-TRANS);
+  opacity: 0.6;
+}
+
+.checkbox-ip {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* form inputs */
+
+.form-validation-msg {
+  display: block;
+  font-weight:550;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.form-validation-msg i {
+  margin-right: 0.5rem;
+}
+
+.form-validated :valid~.success-msg {
+    display: block;
+}
+
+.form-validated :invalid~.error-msg {
+    display: block;
+}
+
+.mandatory-field {
+  color: var(--RED);
+  margin-left: 0.3rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 400px) {
+  .form-card {
+    width: 100%;
+  }
+}
