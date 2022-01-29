@@ -17,6 +17,23 @@ select:focus {
   border-color: var(--COLOR-PRIMARY);
 }
 
+.placeholder {
+  position: absolute;
+  pointer-events: none;
+  left: 3%;
+  bottom: -4%;
+  font-weight: 400;
+  transition: 300ms ease all;
+}
+
+input:focus ~ .placeholder,
+input:valid ~ .placeholder {
+  left: 0;
+  bottom: 90%;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 select {
   cursor: pointer;
 }
@@ -24,6 +41,7 @@ select {
 .field {
   text-align: left;
   align-items: start;
+  position: relative;
 }
 
 .reset-ip {
@@ -46,7 +64,7 @@ select {
 
 .form-validation-msg {
   display: block;
-  font-weight:550;
+  font-weight: 550;
   margin-top: 0.5rem;
   display: none;
 }
@@ -55,12 +73,12 @@ select {
   margin-right: 0.5rem;
 }
 
-.form-validated :valid~.success-msg {
-    display: block;
+.form-validated :valid ~ .success-msg {
+  display: block;
 }
 
-.form-validated :invalid~.error-msg {
-    display: block;
+.form-validated :invalid ~ .error-msg {
+  display: block;
 }
 
 .mandatory-field {

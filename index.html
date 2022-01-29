@@ -12,7 +12,7 @@
   <body>
     <main class="centered-text">
       <!-- Avatar Demo -->
-      <h1 class="m-2">Avatar Components</h1>
+      <h1 class="m-2 title">Avatar Components</h1>
       <div class="container colored-container col-flex">
         <!-- Image Avatar -->
         <h2>Image Avatar</h2>
@@ -55,7 +55,7 @@
       </div>
 
       <!-- Alert Demo -->
-      <h1 class="m-2">Alert Components</h1>
+      <h1 class="m-2 title">Alert Components</h1>
       <div class="container colored-container col-flex">
         <!-- Default Alerts -->
         <h2 class="m-v-2">Default Alerts</h2>
@@ -178,7 +178,7 @@
       </div>
 
       <!-- Badge Demo -->
-      <h1 class="m-2">Badge Components</h1>
+      <h1 class="m-2 title">Badge Components</h1>
       <div class="container colored-container col-flex">
         <!-- Badge on Avatar -->
         <h2 class="m-3">Badge on Avatar</h2>
@@ -210,11 +210,11 @@
           </button>
           <button class="badge-wrapper primary-icon-btn m-v-1">
             <i class="fa fa-envelope" aria-hidden="true"></i>
-            <span class="badge wt-text grid-ctr blue-bg">19+</span>
+            <span class="badge wt-text grid-ctr red-bg">19+</span>
           </button>
           <button class="badge-wrapper primary-icon-btn m-v-1">
             <i class="fa fa-heart-o" aria-hidden="true"></i>
-            <span class="badge wt-text grid-ctr blue-bg">19+</span>
+            <span class="badge wt-text grid-ctr green-bg">19+</span>
           </button>
         </div>
 
@@ -223,15 +223,15 @@
         <div class="demo w-60p row-flex">
           <button class="badge-wrapper btn-badge btn primary-btn m-2">
             Button
-            <span class="badge wt-text grid-ctr blue-bg">99+</span>
+            <span class="badge wt-text grid-ctr blue-badge">99+</span>
           </button>
           <button class="badge-wrapper btn-badge toogle-badge-btn btn primary-btn m-2">
             Toggle Badge
-            <span class="badge wt-text grid-ctr red-bg">9</span>
+            <span class="badge wt-text grid-ctr yellow-badge">9</span>
           </button>
           <button class="badge-wrapper btn-badge toogle-icon-badge-btn btn primary-btn m-2">
             <i class="fa fa-heart-o" aria-hidden="true"></i>
-            <span class="badge badge-tl wt-text grid-ctr green-bg">14</span>
+            <span class="badge badge-tl wt-text grid-ctr green-badge">14</span>
           </button>
         </div>
 
@@ -240,25 +240,25 @@
         <div class="demo w-95p col-flex flex-start left-text">
           <h1 class="badge-wrapper m-2">
             Text heading with a large badge
-            <span class="badge lg-badge txt-badge wt-text grid-ctr blue-bg">NEW</span>
+            <span class="badge lg-badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
           </h1>
           <h2 class="badge-wrapper m-2">
             Text heading with a medium badge
-            <span class="badge md-badge txt-badge wt-text grid-ctr blue-bg">NEW</span>
+            <span class="badge md-badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
           </h2>
           <h6 class="badge-wrapper m-2">
             Text heading with a small badge
-            <span class="badge sm-badge txt-badge wt-text grid-ctr blue-bg">NEW</span>
+            <span class="badge sm-badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
           </h6>
           <p class="badge-wrapper m-2">
             Paragraph heading with a default badge
-            <span class="badge txt-badge wt-text grid-ctr blue-bg">NEW</span>
+            <span class="badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
           </p>
         </div>
       </div>
 
       <!-- Button Demo -->
-      <h1 class="m-2">Button Components</h1>
+      <h1 class="m-2 title">Button Components</h1>
       <div class="container colored-container col-flex">
         <!-- Primary Buttons -->
         <h2 class="m-3">Primary Buttons</h2>
@@ -308,7 +308,7 @@
       </div>
 
       <!-- Card Demo -->
-      <h1 class="m-2">Card Components</h1>
+      <h1 class="m-2 title">Card Components</h1>
       <div class="container colored-container col-flex">
         <!-- Cards w/ badges-->
         <h2 class="m-3">Cards with Badge</h2>
@@ -317,9 +317,9 @@
           <div class="card hz-card media-card left-text row-flex text-wrap box-shd w-50rm h-25rm m-2">
             <img class="card-img h-25rm w-35p" src="assets/moon-lamp.jpg" alt="minion" />
             <div class="card-header-text h-25rm col-flex">
-              <h2 class="card-title colored-txt h3">Moon lamp</h2>
+              <h2 class="card-title colored-txt m-v-1 h3">Moon lamp</h2>
               <p class="h6">Illuminates your room.<br /><small>Sold by: Nene Stores</small></p>
-              <sub class="h5">Fancy night lamp for your room</sub>
+              <sub class="h5 m-v-2">Fancy night lamp for your room</sub>
 
               <div class="card-actions card-btns row-flex full-wd">
                 <button class="btn primary-btn p-1 m-r-1">
@@ -530,15 +530,19 @@
       </div>
 
       <!-- Input Demo -->
-      <h1 class="m-2">Input Components</h1>
+      <h1 class="m-2 title">Input Components</h1>
       <div class="container colored-container col-flex">
         <!-- Input Types-->
         <h2 class="m-3">Input Types</h2>
         <div class="demo full-wd row-flex">
-          <form class="card form-card left-text row-flex text-wrap box-shd w-80p p-1 m-2">
+          <form class="card form-card left-text row-flex text-wrap box-shd w-80p p-h-1 p-v-2 m-2">
             <div class="field col-flex m-1">
               <label class="m-v-1" for="name">Default</label>
-              <input type="text" class="input p-07" id="name" />
+              <input type="text" class="input p-07" id="name" required/>
+            </div>
+            <div class="field col-flex m-1 m-t-3">
+              <input type="text" class="input p-07" id="name" required/>
+              <label class="placeholder m-v-1" for="name">Move over label</label>
             </div>
             <div class="field col-flex m-1">
               <label class="m-v-1" for="password">Password</label>
@@ -644,7 +648,7 @@
       </div>
 
       <!-- Image Demo -->
-      <h1 class="m-2">Image Components</h1>
+      <h1 class="m-2 title">Image Components</h1>
       <div class="container colored-container col-flex">
         <!-- Responsive Image-->
         <h2 class="m-3">Responsive Image</h2>

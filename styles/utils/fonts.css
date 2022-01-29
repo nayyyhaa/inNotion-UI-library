@@ -32,7 +32,8 @@ input,
 select,
 option,
 textarea,
-button {
+button,
+.placeholder {
   font-size: 1.8rem;
 }
 
@@ -80,6 +81,22 @@ a {
 .colored-txt {
   color: var(--COLOR-PRIMARY);
   font-weight: 550;
+  position: relative;
+}
+
+.colored-txt.bg {
+  z-index: 2;
+  margin-bottom: 1rem;
+}
+
+.bg:before {
+  position: absolute;
+  content: "";
+  width: 40%;
+  height: 2rem;
+  bottom: -15%;
+  background: var(--COLOR-COMPLEMENTARY-LIGHT);
+  z-index: -1;
 }
 
 .wt-text {

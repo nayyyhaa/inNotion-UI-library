@@ -55,24 +55,7 @@
 /*filled*/
 
 .filled-alert {
-  background: var(--COLOR-PRIMARY-DARK);
-  color: white;
-}
-
-.filled-alert.info-alert {
-  background: var(--BLUE);
-}
-
-.filled-alert.success-alert {
-  background: var(--GREEN);
-}
-
-.filled-alert.warning-alert {
-  background: var(--YELLOW);
-}
-
-.filled-alert.error-alert {
-  background: var(--RED);
+  border: none;
 }
 
 /*transition*/

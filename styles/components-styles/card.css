@@ -83,7 +83,7 @@
 .card-btn:hover,
 .card-icon-btn:hover {
   color: var(--COLOR-PRIMARY);
-  background: var(--COLOR-PRIMARY-XLIGHT);
+  background: var(--COLOR-COMPLEMENTARY-XLIGHT);
 }
 
 .card-accept-btn,
@@ -95,16 +95,16 @@
 .badge-card-tr {
   position: absolute;
   bottom: 84%;
-  right: 95%;
+  right: 91%;
   left: unset;
 }
 
 .vd-card .badge-card-tr {
-  right: 70%;
+  right: 68%;
 }
 
 .close-btn {
-  position: relative;
+  position: absolute;
   left: 85%;
   color: var(--RED);
 }

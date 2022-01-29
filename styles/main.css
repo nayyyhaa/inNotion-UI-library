@@ -21,15 +21,21 @@
 
 :root {
   /* Primary */
-  --COLOR-PRIMARY-XXLIGHT: #f1f0ff;
+  --COLOR-PRIMARY-XXLIGHT: #ecebfc;
   --COLOR-PRIMARY-XLIGHT: #e1dafd;
-  --COLOR-PRIMARY-LIGHT: #c7b9ff;
-  --COLOR-PRIMARY: #7161ff;
-  --COLOR-PRIMARY-TRANS: rgba(149, 132, 250, 0.72);
-  --COLOR-PRIMARY-DARK-TRANS: rgba(98, 81, 228, 0.76);
-  --COLOR-PRIMARY-DARK: rgb(76 63 181);
-  --COLOR-PRIMARY-XDARK: #352a6b;
-  --COLOR-PRIMARY-SAT: #9a47ff;
+  --COLOR-PRIMARY-LIGHT: #c3b9ff;
+  --COLOR-PRIMARY: #616bff;
+  --COLOR-PRIMARY-TRANS: rgba(150, 132, 250, 0.72);
+  --COLOR-PRIMARY-DARK: #2b37e0;
+  --COLOR-PRIMARY-SAT: #8747ff;
+
+  
+  /* Complementary */
+  --COLOR-COMPLEMENTARY-XLIGHT:rgb(255, 238, 240);
+  --COLOR-COMPLEMENTARY-LIGHT: rgb(253, 218, 223);
+  --COLOR-COMPLEMENTARY: rgb(253, 170, 184);
+  --COLOR-COMPLEMENTARY-DARK: rgb(250, 81, 109);
+  --COLOR-COMPLEMENTARY-XDARK: rgb(168, 2, 30);
 
   /* Grey */
   --COLOR-GREY-TRANS: rgba(240, 238, 238, 0.342);
@@ -38,15 +44,15 @@
   --COLOR-GREY-XDARK: #333;
 
   /* Others */
-  --RED: rgb(255, 77, 77);
-  --RED-LIGHT: #fdeded;
+  --RED: rgb(252, 57, 57);
+  --RED-LIGHT: #fcc3c3;
   --BLUE: #495ed1;
   --BLUE-LIGHT: #699bf7;
   --BLUE-XLIGHT: #bfd5fd;
-  --YELLOW: #ca9606;
-  --YELLOW-LIGHT: #fdfae0;
-  --GREEN: #4a8838;
-  --GREEN-LIGHT: #c6f5d0;
+  --YELLOW: #e49502;
+  --YELLOW-LIGHT: #fde7bd;
+  --GREEN: #3ca120;
+  --GREEN-LIGHT: #aefabe;
   --NO-COLOR: rgba(255, 255, 255, 0);
   --BLACK-TRANS: rgb(0 0 0 / 65%);
 }
@@ -58,6 +64,15 @@
   scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
+}
+
+body {
+  color: var(--COLOR-GREY-DARK);
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 main {
