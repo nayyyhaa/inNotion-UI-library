@@ -1,0 +1,75 @@
+.red-bg {
+  background: var(--RED);
+}
+
+.yellow-bg {
+  background: var(--YELLOW);
+}
+
+.green-bg {
+  background: var(--GREEN);
+}
+
+.blue-bg {
+  background: var(--BLUE);
+}
+
+.primary-bg {
+  background: var(--COLOR-PRIMARY);
+}
+
+.red-txt {
+  color: var(--RED);
+}
+
+.green-txt {
+  color: var(--GREEN);
+}
+
+/** colored background + content + border **/
+
+.blue-outlined-content {
+  background: var(--BLUE-XLIGHT);
+  border: 0.15rem solid var(--BLUE);
+  color: var(--BLUE);
+}
+
+.green-outlined-content {
+  background: var(--GREEN-LIGHT);
+  border: 0.15rem solid var(--GREEN);
+  color: var(--GREEN);
+}
+
+.yellow-outlined-content {
+  background: var(--YELLOW-LIGHT);
+  border: 0.15rem solid var(--YELLOW);
+  color: var(--YELLOW);
+}
+
+.red-outlined-content {
+  background: var(--RED-LIGHT);
+  border: 0.15rem solid var(--RED);
+  color: var(--RED);
+}
+
+/* colored background + content */
+
+.blue-content {
+  background: var(--BLUE-XLIGHT);
+  color: var(--BLUE);
+}
+
+.green-content {
+  background: var(--GREEN-LIGHT);
+  color: var(--GREEN);
+}
+
+.yellow-content {
+  background: var(--YELLOW-LIGHT);
+  color: var(--YELLOW);
+}
+
+.red-content {
+  background: var(--RED-LIGHT);
+  color: var(--RED);
+}

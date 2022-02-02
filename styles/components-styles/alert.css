@@ -23,7 +23,7 @@
   background: var(--COLOR-GREY-TRANS);
 }
 
-.action-close:hover {
+.icon-toggle:hover {
   cursor: pointer;
   background: var(--COLOR-GREY-TRANS);
 }

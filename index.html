@@ -9,11 +9,15 @@
     <script src="app.js" defer></script>
     <title>inNotion UI Library | Home</title>
   </head>
-  <body>
-    <main class="centered-text">
+  <body class="content">
+    <header class="row-flex p-2 header sticky-header box-shd">
+      <h1 class="h3 title wt-text">inNotion UI Library</h1>
+      <div class="dark-mode icon-toggle rd-bdr grid-ctr"></div>
+    </header>
+    <main class="centered-text m-auto">
       <!-- Avatar Demo -->
-      <h1 class="m-2 title">Avatar Components</h1>
-      <div class="container colored-container col-flex">
+      <h2 class="m-2 title">Avatar Components</h2>
+      <div class="container colored-container m-5 col-flex">
         <!-- Image Avatar -->
         <h2>Image Avatar</h2>
         <div class="demo w-60p row-flex">
@@ -55,68 +59,16 @@
       </div>
 
       <!-- Alert Demo -->
-      <h1 class="m-2 title">Alert Components</h1>
-      <div class="container colored-container col-flex">
+      <h2 class="m-2 title">Alert Components</h2>
+      <div class="container colored-container m-5 col-flex">
         <!-- Default Alerts -->
         <h2 class="m-v-2">Default Alerts</h2>
-        <div class="demo w-95p row-flex">
-          <div class="alert-box primary-alert row-flex m-1 p-1">
-            <p class="alert-msg">This is a primary alert!</p>
-            <div class="alert-action">
-              <a class="action-link">ACTION!</a>
-              <i class="action-close icon-btn p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="alert-box info-alert row-flex m-1 p-1">
-            <p class="alert-msg">
-              <i class="fa fa-info-circle" aria-hidden="true"></i>
-              This is an info alert — check it out!
-            </p>
-            <div class="alert-action">
-              <a class="action-link">ACTION!</a>
-              <i class="action-close icon-btn p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="alert-box success-alert row-flex m-1 p-1">
-            <p class="alert-msg">
-              <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-              This is an success alert — check it out!
-            </p>
-            <div class="alert-action">
-              <a class="action-link">ACTION!</a>
-              <i class="action-close icon-btn p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="alert-box warning-alert row-flex m-1 p-1">
-            <p class="alert-msg">
-              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-              This is an warning alert — check it out!
-            </p>
-            <div class="alert-action">
-              <a class="action-link">ACTION!</a>
-              <i class="action-close icon-btn p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="alert-box error-alert row-flex m-1 p-1">
-            <p class="alert-msg">
-              <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-              This is a error alert — check it out!
-            </p>
-            <div class="alert-action">
-              <a class="action-link">ACTION!</a>
-              <i class="action-close icon-btn p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- Filled Alerts -->
-        <h2 class="m-v-2">Filled Alerts</h2>
         <div class="demo w-95p row-flex">
           <div class="alert-box filled-alert primary-alert row-flex m-1 p-1">
             <p class="alert-msg">This is a primary alert!</p>
             <div class="alert-action">
               <a class="action-link">ACTION!</a>
-              <i class="action-close p-1 icon-btn rd-bdr fa fa-times" aria-hidden="true"></i>
+              <i class="icon-toggle p-1 icon-btn rd-bdr fa fa-times" aria-hidden="true"></i>
             </div>
           </div>
           <div class="alert-box filled-alert info-alert row-flex m-1 p-1">
@@ -126,7 +78,7 @@
             </p>
             <div class="alert-action">
               <a class="action-link">ACTION!</a>
-              <i class="action-close p-1 icon-btn rd-bdr fa fa-times" aria-hidden="true"></i>
+              <i class="icon-toggle p-1 icon-btn rd-bdr fa fa-times" aria-hidden="true"></i>
             </div>
           </div>
           <div class="alert-box filled-alert success-alert row-flex m-1 p-1">
@@ -136,7 +88,7 @@
             </p>
             <div class="alert-action">
               <a class="action-link">ACTION!</a>
-              <i class="action-close p-1 icon-btn rd-bdr fa fa-times" aria-hidden="true"></i>
+              <i class="icon-toggle p-1 icon-btn rd-bdr fa fa-times" aria-hidden="true"></i>
             </div>
           </div>
           <div class="alert-box filled-alert warning-alert row-flex m-1 p-1">
@@ -146,7 +98,7 @@
             </p>
             <div class="alert-action">
               <a class="action-link">ACTION!</a>
-              <i class="action-close p-1 icon-btn rd-bdr fa fa-times" aria-hidden="true"></i>
+              <i class="icon-toggle p-1 icon-btn rd-bdr fa fa-times" aria-hidden="true"></i>
             </div>
           </div>
           <div class="alert-box filled-alert error-alert row-flex m-1 p-1">
@@ -156,7 +108,59 @@
             </p>
             <div class="alert-action">
               <a class="action-link">ACTION!</a>
-              <i class="action-close p-1 icon-btn rd-bdr fa fa-times" aria-hidden="true"></i>
+              <i class="icon-toggle p-1 icon-btn rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filled Alerts -->
+        <h2 class="m-v-2">Outlined Alerts</h2>
+        <div class="demo w-95p row-flex">
+          <div class="alert-box primary-alert row-flex m-1 p-1">
+            <p class="alert-msg">This is a primary alert!</p>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="icon-toggle icon-btn p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="alert-box info-alert row-flex m-1 p-1">
+            <p class="alert-msg">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+              This is an info alert — check it out!
+            </p>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="icon-toggle icon-btn p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="alert-box success-alert row-flex m-1 p-1">
+            <p class="alert-msg">
+              <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+              This is an success alert — check it out!
+            </p>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="icon-toggle icon-btn p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="alert-box warning-alert row-flex m-1 p-1">
+            <p class="alert-msg">
+              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+              This is an warning alert — check it out!
+            </p>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="icon-toggle icon-btn p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="alert-box error-alert row-flex m-1 p-1">
+            <p class="alert-msg">
+              <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+              This is a error alert — check it out!
+            </p>
+            <div class="alert-action">
+              <a class="action-link">ACTION!</a>
+              <i class="icon-toggle icon-btn p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
             </div>
           </div>
         </div>
@@ -170,7 +174,7 @@
               This is an success alert — check it out!
             </p>
             <div class="alert-action">
-              <i class="action-close icon-btn demo-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
+              <i class="icon-toggle icon-btn demo-close p-1 rd-bdr fa fa-times" aria-hidden="true"></i>
             </div>
           </div>
           <button class="btn primary-btn reopen-alert">Reopen</button>
@@ -178,8 +182,8 @@
       </div>
 
       <!-- Badge Demo -->
-      <h1 class="m-2 title">Badge Components</h1>
-      <div class="container colored-container col-flex">
+      <h2 class="m-2 title">Badge Components</h2>
+      <div class="container colored-container m-5 col-flex">
         <!-- Badge on Avatar -->
         <h2 class="m-3">Badge on Avatar</h2>
         <div class="demo w-60p row-flex">
@@ -223,43 +227,43 @@
         <div class="demo w-60p row-flex">
           <button class="badge-wrapper btn-badge btn primary-btn m-2">
             Button
-            <span class="badge wt-text grid-ctr blue-badge">99+</span>
+            <span class="badge wt-text grid-ctr blue-content">99+</span>
           </button>
           <button class="badge-wrapper btn-badge toogle-badge-btn btn primary-btn m-2">
             Toggle Badge
-            <span class="badge wt-text grid-ctr yellow-badge">9</span>
+            <span class="badge wt-text grid-ctr yellow-content">9</span>
           </button>
           <button class="badge-wrapper btn-badge toogle-icon-badge-btn btn primary-btn m-2">
             <i class="fa fa-heart-o" aria-hidden="true"></i>
-            <span class="badge badge-tl wt-text grid-ctr green-badge">14</span>
+            <span class="badge badge-tl wt-text grid-ctr green-content">14</span>
           </button>
         </div>
 
         <!-- Badge w/ Text -->
         <h2 class="m-3">Badge w/ Text</h2>
         <div class="demo w-95p col-flex flex-start left-text">
-          <h1 class="badge-wrapper m-2">
+          <h2 class="badge-wrapper m-2">
             Text heading with a large badge
-            <span class="badge lg-badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
-          </h1>
+            <span class="badge lg-badge txt-badge wt-text grid-ctr blue-content">NEW</span>
+          </h2>
           <h2 class="badge-wrapper m-2">
             Text heading with a medium badge
-            <span class="badge md-badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
+            <span class="badge md-badge txt-badge wt-text grid-ctr blue-content">NEW</span>
           </h2>
           <h6 class="badge-wrapper m-2">
             Text heading with a small badge
-            <span class="badge sm-badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
+            <span class="badge sm-badge txt-badge wt-text grid-ctr blue-content">NEW</span>
           </h6>
           <p class="badge-wrapper m-2">
             Paragraph heading with a default badge
-            <span class="badge txt-badge wt-text grid-ctr blue-badge">NEW</span>
+            <span class="badge txt-badge wt-text grid-ctr blue-content">NEW</span>
           </p>
         </div>
       </div>
 
       <!-- Button Demo -->
-      <h1 class="m-2 title">Button Components</h1>
-      <div class="container colored-container col-flex">
+      <h2 class="m-2 title">Button Components</h2>
+      <div class="container colored-container m-5 col-flex">
         <!-- Primary Buttons -->
         <h2 class="m-3">Primary Buttons</h2>
         <div class="demo w-80p row-flex">
@@ -275,10 +279,10 @@
         <!-- Colored Buttons -->
         <h2 class="m-3">Colored Buttons</h2>
         <div class="demo w-80p row-flex">
-          <button class="btn error-btn m-1">Error</button>
-          <button class="btn info-btn m-1">Info</button>
-          <button class="btn warning-btn m-1">Warning</button>
-          <button class="btn success-btn m-1">Success</button>
+          <button class="btn red-outlined-content m-1">Error</button>
+          <button class="btn blue-outlined-content m-1">Info</button>
+          <button class="btn yellow-outlined-content m-1">Warning</button>
+          <button class="btn green-outlined-content m-1">Success</button>
           <button class="btn blue-bg">
             <span class="p-r-1">Send</span><i class="fa fa-paper-plane" aria-hidden="true"></i>
           </button>
@@ -308,8 +312,8 @@
       </div>
 
       <!-- Card Demo -->
-      <h1 class="m-2 title">Card Components</h1>
-      <div class="container colored-container col-flex">
+      <h2 class="m-2 title">Card Components</h2>
+      <div class="container colored-container m-5 col-flex">
         <!-- Cards w/ badges-->
         <h2 class="m-3">Cards with Badge</h2>
         <div class="demo full-wd row-flex">
@@ -499,8 +503,8 @@
               <sub>Your request has been sent.<br />Would you like to contiue?</sub>
             </div>
             <div class="card-actions card-btns row-flex full-wd p-0">
-              <button class="btn card-accept-btn success-btn">Yes, please!</button>
-              <button class="btn card-dismiss-btn error-btn">Dismiss</button>
+              <button class="btn card-accept-btn green-outlined-content">Yes, please!</button>
+              <button class="btn card-dismiss-btn red-outlined-content">Dismiss</button>
             </div>
           </div>
 
@@ -530,18 +534,18 @@
       </div>
 
       <!-- Input Demo -->
-      <h1 class="m-2 title">Input Components</h1>
-      <div class="container colored-container col-flex">
+      <h2 class="m-2 title">Input Components</h2>
+      <div class="container colored-container m-5 col-flex">
         <!-- Input Types-->
         <h2 class="m-3">Input Types</h2>
         <div class="demo full-wd row-flex">
           <form class="card form-card left-text row-flex text-wrap box-shd w-80p p-h-1 p-v-2 m-2">
             <div class="field col-flex m-1">
               <label class="m-v-1" for="name">Default</label>
-              <input type="text" class="input p-07" id="name" required/>
+              <input type="text" class="input p-07" id="name" required />
             </div>
             <div class="field col-flex m-1 m-t-3">
-              <input type="text" class="input p-07" id="name" required/>
+              <input type="text" class="input p-07" id="name" required />
               <label class="placeholder m-v-1" for="name">Move over label</label>
             </div>
             <div class="field col-flex m-1">
@@ -648,8 +652,8 @@
       </div>
 
       <!-- Image Demo -->
-      <h1 class="m-2 title">Image Components</h1>
-      <div class="container colored-container col-flex">
+      <h2 class="m-2 title">Image Components</h2>
+      <div class="container colored-container m-5 col-flex">
         <!-- Responsive Image-->
         <h2 class="m-3">Responsive Image</h2>
         <div class="demo full-wd row-flex">

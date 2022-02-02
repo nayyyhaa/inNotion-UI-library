@@ -18,6 +18,11 @@
 @import url("components-styles/card.css");
 @import url("components-styles/image.css");
 @import url("components-styles/input.css");
+@import url("components-styles/nav.css");
+
+/* dark mode & colors*/
+@import url("utils/dark-mode.css");
+@import url("utils/color.css");
 
 :root {
   /* Primary */
@@ -25,25 +30,29 @@
   --COLOR-PRIMARY-XLIGHT: #e1dafd;
   --COLOR-PRIMARY-LIGHT: #c3b9ff;
   --COLOR-PRIMARY: #616bff;
-  --COLOR-PRIMARY-TRANS: rgba(150, 132, 250, 0.72);
+  --COLOR-PRIMARY-MID: #8e7cf9;
   --COLOR-PRIMARY-DARK: #2b37e0;
+  --COLOR-PRIMARY-XXDARK: #2e1437;
+  --COLOR-PRIMARY-XXXDARK: #120318;
   --COLOR-PRIMARY-SAT: #8747ff;
+  --COLOR-PRIMARY-TRANS: #2a37f0a9;
 
-  
   /* Complementary */
-  --COLOR-COMPLEMENTARY-XLIGHT:rgb(255, 238, 240);
+  --COLOR-COMPLEMENTARY-XLIGHT: rgb(255, 238, 240);
   --COLOR-COMPLEMENTARY-LIGHT: rgb(253, 218, 223);
   --COLOR-COMPLEMENTARY: rgb(253, 170, 184);
   --COLOR-COMPLEMENTARY-DARK: rgb(250, 81, 109);
   --COLOR-COMPLEMENTARY-XDARK: rgb(168, 2, 30);
 
   /* Grey */
+  --COLOR-OFFWHITE: #e6e6e6;
   --COLOR-GREY-TRANS: rgba(240, 238, 238, 0.342);
   --COLOR-GREY: rgb(190, 190, 190);
   --COLOR-GREY-DARK: rgb(68, 68, 68);
   --COLOR-GREY-XDARK: #333;
 
   /* Others */
+  --COLOR-CODE-EDITOR: #070318f7;
   --RED: rgb(252, 57, 57);
   --RED-LIGHT: #fcc3c3;
   --BLUE: #495ed1;
@@ -64,42 +73,65 @@
   scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--COLOR-PRIMARY) transparent;
 }
 
 body {
   color: var(--COLOR-GREY-DARK);
 }
 
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--COLOR-PRIMARY);
+  border-radius: 20px;
+  border: transparent;
+}
+
+.dark * {
+  scrollbar-color: var(--COLOR-COMPLEMENTARY-XLIGHT) transparent;
+}
+
+.dark *::-webkit-scrollbar-thumb {
+  background: var(--COLOR-COMPLEMENTARY-XLIGHT);
+}
+
 .title {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  line-height: 4.5rem;
 }
 
 main {
   width: 90%;
-  margin: auto;
+  min-height: 80vh;
+  line-height: 2.5rem;
+  animation: opening 0.5s ease-in forwards;
 }
 
-.red-bg {
-  background: var(--RED);
+/* animations */
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.yellow-bg {
-  background: var(--YELLOW);
-}
+/* Media Queries */
 
-.green-bg {
-  background: var(--GREEN);
-}
-
-.blue-bg {
-  background: var(--BLUE);
-}
-
-.red-txt {
-  color: var(--RED);
-}
-
-.green-txt {
-  color: var(--GREEN);
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 55%;
+  }
 }

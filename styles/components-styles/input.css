@@ -21,7 +21,7 @@ select:focus {
   position: absolute;
   pointer-events: none;
   left: 3%;
-  bottom: -4%;
+  bottom: -0.5rem;
   font-weight: 400;
   transition: 300ms ease all;
 }
@@ -88,7 +88,7 @@ select {
 
 /* Media queries */
 @media screen and (max-width: 400px) {
-  .form-card {
+  .form-card, .field {
     width: 100%;
   }
 }
