@@ -109,6 +109,14 @@
   color: var(--COLOR-PRIMARY-XXDARK);
 }
 
+.dark .red-txt {
+  color: var(--RED);
+}
+
+.dark .green-txt {
+  color: var(--GREEN);
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 600px) {
