@@ -53,32 +53,6 @@ button {
   color: var(--COLOR-PRIMARY);
 }
 
-/** colored buttons **/
-
-.info-btn {
-  background: var(--BLUE-XLIGHT);
-  border: 0.15rem solid var(--BLUE);
-  color: var(--BLUE);
-}
-
-.success-btn {
-  background: var(--GREEN-LIGHT);
-  border: 0.15rem solid var(--GREEN);
-  color: var(--GREEN);
-}
-
-.warning-btn {
-  background: var(--YELLOW-LIGHT);
-  border: 0.15rem solid var(--YELLOW);
-  color: var(--YELLOW);
-}
-
-.error-btn {
-  background: var(--RED-LIGHT);
-  border: 0.15rem solid var(--RED);
-  color: var(--RED);
-}
-
 /** feature buttons **/
 
 .floating-btn {

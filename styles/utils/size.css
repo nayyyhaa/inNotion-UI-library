@@ -1,5 +1,13 @@
 /** WIDTHS **/
 
+.w-25p {
+  width: 25%;
+}
+
+.w-30p {
+  width: 30%;
+}
+
 .w-35p {
   width: 35%;
 }

@@ -47,3 +47,7 @@ a {
   pointer-events: none;
   cursor: default;
 }
+
+.cursor {
+  cursor: pointer;
+}

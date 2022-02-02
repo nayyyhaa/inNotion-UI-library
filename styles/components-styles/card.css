@@ -59,6 +59,16 @@
   background: var(--BLACK-TRANS);
 }
 
+.card-text-overlay {
+  width: 100%;
+  top: 0;
+}
+
+.icon-btn,
+.card-btn {
+  transition: all 0.2s ease-in;
+}
+
 .dismiss-card .card-actions {
   padding: 0;
   align-items: stretch;

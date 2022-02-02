@@ -75,24 +75,3 @@
   left: 80%;
 }
 
-/*badge colors */
-
-.blue-badge {
-  background: var(--BLUE-XLIGHT);
-  color: var(--BLUE);
-}
-
-.green-badge  {
-  background: var(--GREEN-LIGHT);
-  color: var(--GREEN);
-}
-
-.yellow-badge {
-  background: var(--YELLOW-LIGHT);
-  color: var(--YELLOW);
-}
-
-.red-badge {
-  background: var(--RED-LIGHT);
-  color: var(--RED);
-}

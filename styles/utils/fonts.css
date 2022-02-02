@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500&family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inconsolata:wght@400;600&family=Poppins:wght@400;500&family=Lato:wght@300;400;700&display=swap");
 
 sub,
 label,
@@ -92,7 +92,7 @@ a {
 .bg:before {
   position: absolute;
   content: "";
-  width: 40%;
+  width: 94%;
   height: 2rem;
   bottom: -15%;
   background: var(--COLOR-COMPLEMENTARY-LIGHT);
@@ -107,6 +107,48 @@ a {
   text-transform: uppercase;
 }
 
-.text-shadow {
-  text-shadow: 1px 1px 1px var(--BLACK-TRANS);
+.lg-text {
+  font-size: 5rem;
+}
+
+.lg-text.bg::before {
+  width: 84%;
+  height: 3rem;
+}
+
+.text-stroke {
+  font-weight: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.25rem;
+}
+
+.txt-shd {
+  text-shadow: 0.2rem 0.2rem 0.2rem var(--COLOR-GREY-DARK);
+}
+
+code {
+  font-family: "Inconsolata", monospace;
+  background: var(--COLOR-COMPLEMENTARY-LIGHT);
+  color: var(--COLOR-PRIMARY-DARK);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.colored-bg {
+  position: relative;
+}
+
+.colored-bg::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 2rem;
+  bottom: 4%;
+  left: 0;
+  background: var(--COLOR-COMPLEMENTARY-LIGHT);
+  z-index: -1;
 }

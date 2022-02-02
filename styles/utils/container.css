@@ -4,7 +4,6 @@
   display: flex;
   flex-wrap: wrap;
   border-radius: 0 2rem;
-  margin: 5rem;
   padding: 2rem 0.25rem;
 }
 
@@ -24,6 +23,15 @@
 .container-title {
   margin: 1vh 0;
   min-height: 8vh;
+}
+
+.code-container {
+  height: 40vh;
+}
+
+.section {
+  min-height: calc(100vh - 8rem);
+  margin: auto;
 }
 
 /* Media Queries */
