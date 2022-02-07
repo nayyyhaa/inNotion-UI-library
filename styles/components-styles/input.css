@@ -87,8 +87,9 @@ select {
 }
 
 /* Media queries */
-@media screen and (max-width: 400px) {
-  .form-card, .field {
+@media screen and (max-width: 600px) {
+  .form-card,
+  .field {
     width: 100%;
   }
 }

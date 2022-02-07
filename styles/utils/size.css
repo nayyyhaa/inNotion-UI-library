@@ -27,8 +27,13 @@
 .w-80p {
   width: 80%;
 }
+
 .w-95p {
   width: 95%;
+}
+
+.w-3rm {
+  width: 3rem;
 }
 
 .w-10rm {
@@ -60,6 +65,10 @@
 }
 
 /** HEIGHTS **/
+
+.h-3rm {
+  height: 3rem;
+}
 
 .h-10rm {
   height: 10rem;

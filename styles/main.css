@@ -99,11 +99,11 @@ body {
 }
 
 .dark * {
-  scrollbar-color: var(--COLOR-COMPLEMENTARY-XLIGHT) transparent;
+  scrollbar-color: var(--COLOR-COMPLEMENTARY) transparent;
 }
 
 .dark *::-webkit-scrollbar-thumb {
-  background: var(--COLOR-COMPLEMENTARY-XLIGHT);
+  background: var(--COLOR-COMPLEMENTARY);
 }
 
 .title {
