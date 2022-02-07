@@ -78,7 +78,7 @@
 @media screen and (max-width: 950px) {
   .searchfield {
     position: absolute;
-    top: 10vh;
+    top: 8vh;
     left: 0;
     width: 100%;
   }
