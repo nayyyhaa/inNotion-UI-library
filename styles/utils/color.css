@@ -18,12 +18,16 @@
   background: var(--COLOR-PRIMARY);
 }
 
-.red-txt {
+.red-text {
   color: var(--RED);
 }
 
-.green-txt {
+.green-text {
   color: var(--GREEN);
+}
+
+.grey-text {
+  color: var(--COLOR-GREY);
 }
 
 /** colored background + content + border **/

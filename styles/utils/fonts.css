@@ -20,6 +20,7 @@ i {
 
 h1 {
   font-size: 3.5rem;
+  line-height: 4.5rem;
 }
 
 h2 {
@@ -27,6 +28,7 @@ h2 {
 }
 
 h3,
+em,
 div,
 input,
 select,
@@ -37,12 +39,22 @@ button,
   font-size: 1.8rem;
 }
 
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
 small {
   font-size: 1.1rem;
   color: var(--COLOR-GREY-DARK);
 }
 
-p {
+p,
+del,
+strong {
   font-size: 1.6rem;
   letter-spacing: 0.0125em;
 }
@@ -78,13 +90,13 @@ a {
   font-size: 1.3rem;
 }
 
-.colored-txt {
+.colored-text {
   color: var(--COLOR-PRIMARY);
   font-weight: 550;
   position: relative;
 }
 
-.colored-txt.bg {
+.colored-text.bg {
   z-index: 2;
   margin-bottom: 1rem;
 }
@@ -124,7 +136,7 @@ a {
   -webkit-text-stroke-width: 0.25rem;
 }
 
-.txt-shd {
+.text-shd {
   text-shadow: 0.2rem 0.2rem 0.2rem var(--COLOR-GREY-DARK);
 }
 

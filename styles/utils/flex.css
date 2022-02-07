@@ -17,3 +17,11 @@
   justify-content: start;
   align-items: start;
 }
+
+.align-start {
+  align-items: start;
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
+}

@@ -52,6 +52,24 @@ validateForm.forEach((form) => {
   );
 });
 
+/*-----------RATINGS DEMO---------------------*/
+
+const ratingInputs = document.querySelectorAll(".rating-example input");
+let ratingOutput = document.querySelector(".rating-output");
+
+ratingInputs.forEach((ratingInput, idx) => {
+  ratingInput.addEventListener("click", () => submitRating(idx));
+});
+
+const submitRating = (index) => {
+  ratingsTotal = 0;
+  for (let i = 0; i < ratingInputs.length; i++) {
+    ratingInputs[i].checked = i <= index ? true : false;
+    if (i <= index) ratingsTotal++;
+  }
+  ratingOutput.innerText = `You've given ${ratingsTotal} star rating.`;
+};
+
 /*----------DARK MODE------------*/
 //moon icon
 let darkModeElement = document.querySelector(".dark-mode");
@@ -62,7 +80,6 @@ let darkModeInStorage = false;
 
 const toogleDarkMode = (darkModeInStorage) => {
   content.classList.toggle("dark");
-  console.log(darkModeInStorage, "t");
   darkModeInStorage = !darkModeInStorage;
   localStorage.setItem("darkModeInStorage", JSON.stringify(darkModeInStorage));
 };
