@@ -1,0 +1,28 @@
+.rating-input {
+  opacity: 0;
+}
+
+.rating-input:checked ~ .rating-icon,
+.rating-badge .rating-icon {
+  color: var(--COLOR-PRIMARY);
+}
+
+.rating-input:not(:checked) ~ i {
+  color: var(--COLOR-PRIMARY-LIGHT);
+}
+
+.rating-input.rating-heart:checked ~ .rating-icon {
+  color: var(--COLOR-COMPLEMENTARY-DARK);
+}
+
+.rating-input.rating-heart:not(:checked) ~ .rating-icon {
+  color: var(--COLOR-COMPLEMENTARY);
+}
+
+.rating-badge {
+  background: var(--COLOR-PRIMARY-LIGHT);
+  color: var(--COLOR-GREY-XDARK);
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-weight: bold;
+}

@@ -1,15 +1,16 @@
 /*dark mode*/
-.dark {
+.dark,
+.dark .text-content {
   background: linear-gradient(to right, #2b5876, var(--COLOR-PRIMARY-XXDARK));
   color: var(--COLOR-OFFWHITE);
   transition: all 0.3s ease-in;
 }
 
-.dark .colored-txt {
-  color: var(--COLOR-PRIMARY-XLIGHT);
+.dark .colored-text {
+  color: var(--COLOR-COMPLEMENTARY-LIGHT);
 }
 
-.dark .colored-txt.bg::after,
+.dark .colored-text.bg::after,
 .dark .colored-bg::after,
 .dark .bg::before {
   background: var(--COLOR-PRIMARY-TRANS);
@@ -109,12 +110,17 @@
   color: var(--COLOR-PRIMARY-XXDARK);
 }
 
-.dark .red-txt {
+.dark .red-text {
   color: var(--RED);
 }
 
-.dark .green-txt {
+.dark .green-text {
   color: var(--GREEN);
+}
+
+.dark .rating-input.rating-star:checked ~ .rating-icon,
+.dark .rating-badge .rating-icon {
+  color: var(--COLOR-PRIMARY-DARK);
 }
 
 /* Media Queries */

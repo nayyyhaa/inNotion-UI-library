@@ -31,6 +31,10 @@ a {
   text-align: left;
 }
 
+.right-text {
+  text-align: right;
+}
+
 .show {
   display: block;
 }
