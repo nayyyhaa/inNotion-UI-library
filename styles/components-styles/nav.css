@@ -125,4 +125,14 @@
   .show-nav ~ .hamburger {
     color: white;
   }
+
+  .header-wrapper {
+    width: 32rem;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .header-wrapper {
+    width: 20rem;
+  }
 }
