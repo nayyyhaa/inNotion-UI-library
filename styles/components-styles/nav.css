@@ -7,7 +7,7 @@
 .header-wrapper {
   background: white;
   width: 45rem;
-  height: 15rem;
+  height: 20rem;
   overflow-x: scroll;
 }
 
@@ -50,12 +50,12 @@
 .searchfield {
   display: flex;
   align-items: center;
-  background: var(--COLOR-OFFWHITE);
+  background: white;
   border-radius: 4px;
 }
 
 .search-nav {
-  background: var(--COLOR-OFFWHITE);
+  background: white;
   border: none;
 }
 
