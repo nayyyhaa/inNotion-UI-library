@@ -50,12 +50,12 @@
 .searchfield {
   display: flex;
   align-items: center;
-  background: var(--COLOR-PRIMARY-XXLIGHT);
+  background: var(--COLOR-OFFWHITE);
   border-radius: 4px;
 }
 
 .search-nav {
-  background: var(--COLOR-PRIMARY-XXLIGHT);
+  background: var(--COLOR-OFFWHITE);
   border: none;
 }
 
