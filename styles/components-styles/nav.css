@@ -17,10 +17,12 @@
   -webkit-backdrop-filter: blur(2rem);
   box-shadow: inset 0px -1px 1px #e7ebf0;
   position: relative;
+  height: fit-content;
 }
 
 .navbar {
-  width: 90%;
+  position: relative;
+  width: 98%;
   margin: auto;
   min-height: 10vh;
   justify-content: space-between;
@@ -37,6 +39,7 @@
 .nav-link-btn a:hover {
   color: var(--COLOR-COMPLEMENTARY-LIGHT);
   border-bottom: 0.25rem solid white;
+  transition: all 0.2s ease;
 }
 
 .nav-icon-btn {
@@ -45,6 +48,15 @@
 
 .nav-icon-btn:last-child {
   margin: 0;
+}
+
+.nav-icon-btn:hover > * {
+  transition: all 0.2s ease;
+  color: var(--COLOR-COMPLEMENTARY-LIGHT);
+}
+
+.nav-icon-btn:last-child {
+  margin-right: 3rem;
 }
 
 .searchfield {
@@ -75,24 +87,43 @@
   z-index: 10;
 }
 
+/*media queries*/
+
+@media screen and (max-width: 1150px) {
+  .nav-items {
+    width: 33%;
+  }
+}
+
 @media screen and (max-width: 950px) {
+  .navbar {
+    width: 100%;
+  }
+
   .searchfield {
     position: absolute;
-    top: 8vh;
-    left: 0;
     width: 100%;
+    top: 10vh;
+    left: 0;
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
   }
 
   .nav-icon-text {
     display: none;
   }
+
+  .search-nav {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav-icon-btn:last-child {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 700px) {
-  .navbar {
-    width: 96%;
-  }
-
   .hamburger,
   .docs-hamburger {
     display: grid;
@@ -113,12 +144,14 @@
     width: 100%;
     height: var(--height);
     left: 0;
+    z-index: 1;
     top: calc(var(--height) * -1);
     background: var(--COLOR-PRIMARY);
     backdrop-filter: blur(9rem);
     -webkit-backdrop-filter: blur(9rem);
     transition: all 1s ease 0s;
     opacity: 0;
+    z-index: 1;
   }
 
   .show-nav {
@@ -134,10 +167,28 @@
   .header-wrapper {
     width: 32rem;
   }
+
+  .nav-icon-btn {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .nav-icon-btns {
+    margin-right: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 290px) {
   .header-wrapper {
     width: 20rem;
   }
+}
+
+.search-nav {
+  padding: 0.75rem 0.5rem;
 }

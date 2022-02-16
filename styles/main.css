@@ -1,6 +1,7 @@
 /* UTILS */
 
 @import url("utils/container.css");
+@import url("utils/design.css");
 @import url("utils/flex.css");
 @import url("utils/grids.css");
 @import url("utils/fonts.css");
@@ -16,11 +17,15 @@
 @import url("components-styles/badge.css");
 @import url("components-styles/button.css");
 @import url("components-styles/card.css");
+@import url("components-styles/footer.css");
 @import url("components-styles/image.css");
 @import url("components-styles/input.css");
+@import url("components-styles/list.css");
+@import url("components-styles/modal.css");
 @import url("components-styles/nav.css");
-@import url("components-styles/side-bar.css");
 @import url("components-styles/rating.css");
+@import url("components-styles/side-bar.css");
+@import url("components-styles/toast.css");
 
 /* dark mode & colors*/
 @import url("utils/dark-mode.css");
@@ -65,6 +70,7 @@
   --GREEN: #3ca120;
   --GREEN-LIGHT: #aefabe;
   --NO-COLOR: rgba(255, 255, 255, 0);
+  --BLACK: #333;
   --BLACK-TRANS: rgb(0 0 0 / 65%);
 }
 
@@ -135,5 +141,17 @@ main {
 @media screen and (max-width: 600px) {
   * {
     font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  * {
+    font-size: 52%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  * {
+    font-size: 48%;
   }
 }

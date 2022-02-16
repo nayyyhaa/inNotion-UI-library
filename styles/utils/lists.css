@@ -1,3 +1,32 @@
-ul.no-bullet {
+.no-bullet {
   list-style: none;
+}
+
+.list-style-square {
+  list-style-type: square;
+}
+
+.list-style-circle {
+  list-style-type: circle;
+}
+
+.list-style-alpha {
+  list-style-type: lower-alpha;
+}
+
+.list-style-roman {
+  list-style-type: lower-roman;
+}
+
+.list-content-item {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.list-content-item:hover {
+  background: var(--COLOR-PRIMARY-XXLIGHT);
+}
+
+.list-stacked-content {
+  min-width: 25rem;
 }

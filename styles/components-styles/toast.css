@@ -1,0 +1,23 @@
+.toast {
+  min-width: auto;
+  height: 100%;
+  font-size: 1.6rem;
+  border-radius: 0.4rem;
+  background: var(--BLACK);
+  color: white;
+  height: auto;
+  justify-content: space-between;
+}
+
+.example-toast {
+  opacity: 0;
+  display: none;
+}
+
+.show-toast {
+  opacity: 1;
+  display: flex;
+  position: fixed;
+  top: 9rem;
+  right: 1rem;
+}

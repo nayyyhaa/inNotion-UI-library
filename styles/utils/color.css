@@ -30,6 +30,12 @@
   color: var(--COLOR-GREY);
 }
 
+.complementary-color-text {
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--COLOR-COMPLEMENTARY);
+}
+
 /** colored background + content + border **/
 
 .blue-outlined-content {

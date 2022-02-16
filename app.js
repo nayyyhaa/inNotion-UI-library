@@ -69,6 +69,44 @@ const submitRating = (index) => {
   }
   ratingOutput.innerText = `You've given ${ratingsTotal} star rating.`;
 };
+/*-----------MODAL DEMO---------------------*/
+
+const openModalBtn = document.querySelector(".open-modal-btn");
+const closeModalBtn = document.querySelectorAll(".example-modal-close-btn");
+const modalWrapper = document.querySelector(".modal-wrapper-example");
+
+const openModal = () => {
+  modalWrapper.classList.add("show-modal");
+  document.body.style.overflow = "hidden";
+};
+
+const closeModal = () => {
+  modalWrapper.classList.remove("show-modal");
+  document.body.style.overflow = "visible";
+};
+
+openModalBtn.addEventListener("click", openModal);
+closeModalBtn.forEach((closeBtn) => closeBtn.addEventListener("click", closeModal));
+
+/*-----------TOAST DEMO---------------------*/
+
+const openToastBtn = document.querySelector(".open-toast-btn");
+const closeToastBtn = document.querySelector(".close-toast-btn");
+const toast = document.querySelector(".example-toast");
+
+const openToast = () => {
+  toast.classList.add("show-toast");
+  setTimeout(() => {
+    closeToast()
+  },2000);
+};
+
+const closeToast = () => {
+  toast.classList.remove("show-toast");
+};
+
+openToastBtn.addEventListener("click", openToast);
+closeToastBtn.addEventListener("click", closeToast);
 
 /*----------DARK MODE------------*/
 //moon icon
