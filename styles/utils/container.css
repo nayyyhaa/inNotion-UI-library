@@ -10,10 +10,7 @@
 
 .sm-container {
   background: white;
-  width: 25rem;
   align-items: flex-start;
-  padding: 1rem;
-  margin: 1rem;
   border-radius: 0.5rem;
 }
 

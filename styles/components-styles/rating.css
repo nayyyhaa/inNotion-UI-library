@@ -1,5 +1,10 @@
 .rating-input {
   opacity: 0;
+  display: none;
+}
+
+.rating-input[disabled] {
+  pointer-events: none;
 }
 
 .rating-input:checked ~ .rating-icon,
@@ -20,9 +25,10 @@
 }
 
 .rating-badge {
-  background: var(--COLOR-PRIMARY-LIGHT);
   color: var(--COLOR-GREY-XDARK);
+  background: var(--COLOR-PRIMARY-XXLIGHT);
   padding: 2px 4px;
   border-radius: 2px;
   font-weight: bold;
+  width: auto;
 }

@@ -1,0 +1,30 @@
+.circle {
+  display: inline-block;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border: 0.25rem solid var(--COLOR-PRIMARY);
+  border-radius: 50%;
+  margin-right: 2rem;
+  pointer-events: none;
+}
+
+.circle::after {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: var(--COLOR-COMPLEMENTARY-LIGHT);
+  position: absolute;
+  top: 14%;
+  left: 1.5%;
+  z-index: -1;
+}
+
+.line-decoration {
+  height: 0.2rem;
+  width: 100%;
+  background: var(--COLOR-GREY);
+  margin: auto;
+  margin: 1rem 0;
+}

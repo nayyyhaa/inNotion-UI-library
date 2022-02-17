@@ -35,8 +35,10 @@ select,
 option,
 textarea,
 button,
-.placeholder {
-  font-size: 1.8rem;
+.placeholder,
+.input,
+.btn {
+  font-size: 1.6rem;
 }
 
 h4 {
@@ -164,3 +166,20 @@ code {
   background: var(--COLOR-COMPLEMENTARY-LIGHT);
   z-index: -1;
 }
+
+.sub-heading {
+  color: rgb(114 114 114);
+}
+
+.sub-heading-light {
+  color: rgb(141, 140, 140);
+}
+
+.light-font {
+  font-weight: 100;
+}
+
+.medium-font {
+  font-weight: 400;
+}
+

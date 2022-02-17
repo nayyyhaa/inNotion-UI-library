@@ -17,7 +17,7 @@
     <main class="centered-text m-auto">
       <!-- Avatar Demo -->
       <h2 class="m-2 title">Avatar Components</h2>
-      <div class="container colored-container m-5 col-flex">
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
         <!-- Image Avatar -->
         <h2>Image Avatar</h2>
         <div class="demo w-60p row-flex">
@@ -60,7 +60,7 @@
 
       <!-- Alert Demo -->
       <h2 class="m-2 title">Alert Components</h2>
-      <div class="container colored-container m-5 col-flex">
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
         <!-- Default Alerts -->
         <h2 class="m-v-2">Default Alerts</h2>
         <div class="demo w-95p row-flex">
@@ -183,7 +183,7 @@
 
       <!-- Badge Demo -->
       <h2 class="m-2 title">Badge Components</h2>
-      <div class="container colored-container m-5 col-flex">
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
         <!-- Badge on Avatar -->
         <h2 class="m-3">Badge on Avatar</h2>
         <div class="demo w-60p row-flex">
@@ -225,17 +225,17 @@
         <!-- Badge on Button -->
         <h2 class="m-3">Badge on Button</h2>
         <div class="demo w-60p row-flex">
-          <button class="badge-wrapper btn-badge btn primary-btn m-2">
+          <button class="badge-wrapper btn primary-btn m-2">
             Button
-            <span class="badge wt-text grid-ctr blue-content">99+</span>
+            <span class="badge btn-badge wt-text grid-ctr blue-content">99+</span>
           </button>
-          <button class="badge-wrapper btn-badge toogle-badge-btn btn primary-btn m-2">
+          <button class="badge-wrapper toogle-badge-btn btn primary-btn m-2">
             Toggle Badge
-            <span class="badge wt-text grid-ctr yellow-content">9</span>
+            <span class="badge btn-badge wt-text grid-ctr yellow-content">9</span>
           </button>
-          <button class="badge-wrapper btn-badge toogle-icon-badge-btn btn primary-btn m-2">
+          <button class="badge-wrapper toogle-icon-badge-btn btn primary-btn m-2">
             <i class="fa fa-heart-o" aria-hidden="true"></i>
-            <span class="badge badge-tl wt-text grid-ctr green-content">14</span>
+            <span class="badge btn-badge badge-tl wt-text grid-ctr green-content">14</span>
           </button>
         </div>
 
@@ -244,26 +244,26 @@
         <div class="demo w-95p col-flex flex-start left-text">
           <h1 class="badge-wrapper m-2">
             Text heading with a large badge
-            <span class="badge lg-badge text-badge wt-text grid-ctr blue-content">NEW</span>
+            <span class="badge lg-badge text-badge wt-text blue-content">NEW</span>
           </h1>
           <h2 class="badge-wrapper m-2">
             Text heading with a medium badge
-            <span class="badge md-badge text-badge wt-text grid-ctr blue-content">NEW</span>
+            <span class="badge md-badge text-badge wt-text blue-content">NEW</span>
           </h2>
           <h6 class="badge-wrapper m-2">
             Text heading with a small badge
-            <span class="badge sm-badge text-badge wt-text grid-ctr blue-content">NEW</span>
+            <span class="badge sm-badge text-badge wt-text blue-content">NEW</span>
           </h6>
           <p class="badge-wrapper m-2">
             Paragraph heading with a default badge
-            <span class="badge text-badge wt-text grid-ctr blue-content">NEW</span>
+            <span class="badge text-badge wt-text blue-content">NEW</span>
           </p>
         </div>
       </div>
 
       <!-- Button Demo -->
       <h2 class="m-2 title">Button Components</h2>
-      <div class="container colored-container m-5 col-flex">
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
         <!-- Primary Buttons -->
         <h2 class="m-3">Primary Buttons</h2>
         <div class="demo w-80p row-flex">
@@ -286,6 +286,7 @@
           <button class="btn blue-bg">
             <span class="p-r-1">Send</span><i class="fa fa-paper-plane" aria-hidden="true"></i>
           </button>
+          <button class="btn secondary-outline-btn" type="submit">Submit</button>
         </div>
 
         <!-- Disabled Buttons -->
@@ -313,19 +314,23 @@
 
       <!-- Card Demo -->
       <h2 class="m-2 title">Card Components</h2>
-      <div class="container colored-container m-5 col-flex">
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
         <!-- Cards w/ badges-->
         <h2 class="m-3">Cards with Badge</h2>
         <div class="demo full-wd row-flex">
           <!-- Horizontal cards -->
-          <div class="card hz-card media-card left-text row-flex text-wrap box-shd w-50rm h-25rm m-2">
+          <div class="card hz-card media-card left-text row-flex text-wrap w-50rm h-25rm m-2">
             <img class="card-img h-25rm w-35p" src="assets/moon-lamp.jpg" alt="minion" />
             <div class="card-header-text h-25rm col-flex">
-              <h2 class="card-title colored-text m-v-1 h3">Moon lamp</h2>
-              <p class="h6">Illuminates your room.<br /><small>Sold by: Nene Stores</small></p>
-              <sub class="h5 m-v-2">Fancy night lamp for your room</sub>
+              <h2 class="card-title colored-text h3">Moon lamp</h2>
+              <small>Sold by: Nene Stores</small>
+              <sub class="h5 m-v-1">Fancy night lamp for your room</sub>
+              <p class="h3 colored-text">
+                249₹ <del class="sub-heading-light light-font">499₹ </del>
+                <span class="green-text light-font"> (50% off)</span>
+              </p>
 
-              <div class="card-actions card-btns row-flex full-wd">
+              <div class="card-actions card-btns row-flex full-wd m-v-2">
                 <button class="btn primary-btn p-1 m-r-1">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
                 </button>
@@ -339,17 +344,25 @@
                 </div>
               </div>
             </div>
-            <span class="badge md-badge text-badge badge-card-tr wt-text grid-ctr red-bg">NEW</span>
+            <span class="badge text-badge badge-card-tr wt-text blue-content">NEW</span>
           </div>
 
           <!-- Vertical card -->
-          <div class="card vd-card left-text col-flex flex-start box-shd w-30rm m-2">
+          <div class="card vd-card left-text col-flex flex-start w-30rm m-2">
             <img class="card-img full-wd" src="assets/moon-lamp.jpg" alt="minion" />
             <div class="card-header-text text-wrap p-1">
               <h2 class="card-title colored-text h3">Moon lamp</h2>
+              <div class="rating-badge card-rating-overlay">
+                <span class="rating-number">5</span>
+                <label>
+                  <i class="fa fa-star rating-icon" aria-hidden="true"></i>
+                </label>
+                <span>|</span>
+                <span class="rating-number">99</span>
+              </div>
               <sub>Illuminates your room.</sub>
             </div>
-            <div class="card-actions row-flex full-wd">
+            <div class="card-actions p-2 row-flex full-wd">
               <div class="card-btns">
                 <button class="btn primary-btn m-r-1">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
@@ -362,7 +375,7 @@
                 </button>
               </div>
             </div>
-            <span class="badge md-badge text-badge badge-card-tr wt-text grid-ctr green-bg">Most Popular</span>
+            <span class="badge text-badge badge-card-tr wt-text green-content">Most Popular</span>
           </div>
         </div>
 
@@ -370,13 +383,13 @@
         <h2 class="m-3">Cards with Text Overlay</h2>
         <div class="demo full-wd row-flex">
           <!-- Vertical little text card -->
-          <div class="card vd-card left-text col-flex flex-start box-shd w-30rm m-2">
+          <div class="card vd-card left-text col-flex flex-start w-30rm m-2">
             <img class="card-img full-wd" src="assets/moon-lamp.jpg" alt="minion" />
             <div class="card-header-text card-text-overlay text-wrap p-1">
               <h2 class="card-title h3">Moon lamp</h2>
               <sub>Illuminates your room.</sub>
             </div>
-            <div class="card-actions row-flex full-wd">
+            <div class="card-actions p-2 row-flex full-wd">
               <div class="card-btns">
                 <button class="btn primary-btn m-r-1">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
@@ -392,13 +405,13 @@
           </div>
 
           <!-- Vertical card -->
-          <div class="card vd-card disabled left-text col-flex flex-start box-shd w-30rm m-2">
+          <div class="card vd-card disabled left-text col-flex flex-start w-30rm m-2">
             <img class="card-img full-wd" src="assets/moon-lamp.jpg" alt="minion" />
             <div class="card-header-text text-wrap p-1">
               <h2 class="card-title colored-text h3">Moon lamp</h2>
               <sub>Illuminates your room.</sub>
             </div>
-            <div class="card-actions row-flex full-wd">
+            <div class="card-actions p-2 row-flex full-wd">
               <div class="card-btns">
                 <button class="btn primary-btn m-r-1">
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="p-l-1">Add to cart</span>
@@ -421,7 +434,7 @@
           <!-- Horizontal cards -->
 
           <!-- reader card -->
-          <div class="card hz-card left-text box-shd col-flex w-35rm m-2">
+          <div class="card hz-card left-text col-flex w-35rm m-2">
             <div class="card-header flex-start row-flex text-wrap full-wd">
               <img class="card-img sq-img" src="assets/minion.jpg" alt="minion" />
               <div class="card-header-text p-1">
@@ -429,7 +442,7 @@
                 <sub>Speaks in banana language.</sub>
               </div>
             </div>
-            <div class="card-actions row-flex full-wd">
+            <div class="card-actions p-1 row-flex full-wd">
               <div class="card-btns">
                 <button class="card-btn card-btn-text">READ</button>
                 <button class="card-btn card-btn-text">BOOKMARK</button>
@@ -447,7 +460,7 @@
           </div>
 
           <!-- music card -->
-          <div class="card hz-card media-card left-text box-shd w-35rm h-15rm m-2">
+          <div class="card hz-card media-card left-text w-35rm h-15rm m-2">
             <div class="row-flex text-wrap full-wd">
               <div class="card-header-text col-flex h-15rm">
                 <h2 class="card-title h3">Minion Musify</h2>
@@ -466,13 +479,13 @@
             </div>
           </div>
           <!-- Vertical card -->
-          <div class="card vd-card left-text col-flex flex-start box-shd w-30rm m-2">
+          <div class="card vd-card left-text col-flex flex-start w-30rm m-2">
             <img class="card-img full-wd" src="assets/minion.jpg" alt="minion" />
             <div class="card-header-text text-wrap p-1">
               <h2 class="card-title h3">Minion Mania</h2>
               <sub>Speaks in banana language.</sub>
             </div>
-            <div class="card-actions row-flex full-wd">
+            <div class="card-actions p-2 row-flex full-wd">
               <div class="card-btns">
                 <button class="card-btn card-btn-text">READ</button>
                 <button class="card-btn card-btn-text">BOOKMARK</button>
@@ -494,27 +507,27 @@
         <h2 class="m-3">Dismiss & Text only Card</h2>
         <div class="demo full-wd row-flex">
           <!-- Dismiss Card -->
-          <div class="card dismiss-card hz-card left-text box-shd col-flex w-35rm m-2">
-            <div class="card-header card-header-text text-wrap full-wd p-v-1 p-l-2">
+          <div class="card dismiss-card hz-card left-text col-flex w-35rm m-2">
+            <div class="card-header card-header-text text-wrap full-wd p-v-1 p-l-2 m-b-1">
               <button class="card-icon-btn icon-btn rd-bdr close-btn">
                 <i class="fa fa-times" aria-hidden="true"></i>
               </button>
               <h2 class="card-title colored-text h3">Great!</h2>
               <sub>Your request has been sent.<br />Would you like to contiue?</sub>
             </div>
-            <div class="card-actions card-btns row-flex full-wd p-0">
+            <div class="card-actions p-2 card-btns row-flex full-wd p-0">
               <button class="btn card-accept-btn green-outlined-content">Yes, please!</button>
               <button class="btn card-dismiss-btn red-outlined-content">Dismiss</button>
             </div>
           </div>
 
           <!-- Text only Card -->
-          <div class="card hz-card left-text box-shd col-flex w-35rm m-2">
+          <div class="card hz-card left-text col-flex w-35rm m-2">
             <div class="card-header card-header-text text-wrap full-wd p-1">
               <h2 class="card-title colored-text h3 m-v-1">Nene Book</h2>
               <sub>Inspirational book. Dives deep into the questions about human's existence.</sub>
             </div>
-            <div class="card-actions row-flex full-wd">
+            <div class="card-actions p-2 row-flex full-wd">
               <div class="card-btns">
                 <button class="card-btn card-btn-text">READ</button>
                 <button class="card-btn card-btn-text">BOOKMARK</button>
@@ -535,11 +548,11 @@
 
       <!-- Input Demo -->
       <h2 class="m-2 title">Input Components</h2>
-      <div class="container colored-container m-5 col-flex">
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
         <!-- Input Types-->
         <h2 class="m-3">Input Types</h2>
         <div class="demo full-wd row-flex">
-          <form class="card form-card left-text row-flex text-wrap box-shd w-80p p-h-1 p-v-2 m-2">
+          <form class="card form-card left-text row-flex text-wrap w-80p p-h-1 p-v-2 m-2">
             <div class="field col-flex m-1">
               <label class="m-v-1" for="name">Default</label>
               <input type="text" class="input p-07" id="name" required />
@@ -586,7 +599,7 @@
           <!-- Form with Validations-->
           <h2 class="m-3">Form with Error Validations</h2>
           <div class="demo full-wd row-flex">
-            <form class="card form-card validate-form left-text row-flex text-wrap box-shd w-40rm p-2 m-2" novalidate>
+            <form class="card form-card validate-form left-text row-flex text-wrap w-40rm p-2 m-2" novalidate>
               <div class="field col-flex full-wd m-1">
                 <label class="m-v-1" for="username">Username<span class="mandatory-field">*</span></label>
                 <input type="text" class="input p-07" id="username" required />
@@ -625,7 +638,7 @@
                 </select>
               </div>
               <div class="field full-wd m-1">
-                <input class="checkbox-ip" type="checkbox" class="p-2" id="terms" required />
+                <input class="checkbox-input" type="checkbox" class="p-2" id="terms" required />
                 <label class="m-v-1" for="terms"
                   >Agree to terms & conditions?<span class="mandatory-field">*</span></label
                 >
@@ -653,11 +666,11 @@
 
       <!-- Image Demo -->
       <h2 class="m-2 title">Image Components</h2>
-      <div class="container colored-container m-5 col-flex">
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
         <!-- Responsive Image-->
         <h2 class="m-3">Responsive Image</h2>
         <div class="demo full-wd row-flex">
-          <div class="card box-shd w-80p m-2 p-2">
+          <div class="card w-80p m-2 p-2">
             <img class="responsive-img" src="assets/minion.jpg" alt="minion" />
           </div>
         </div>
@@ -674,51 +687,51 @@
 
       <!-- Navigation Demo -->
       <h2 class="m-2 title">Navigation Demo</h2>
-      <div class="container colored-container col-flex">
+      <div class="container colored-container m-v-5 col-flex">
         <!-- Navigation Demo-->
         <h2 class="m-3">Navigation Demo</h2>
-        <div class="demo col-flex full-wd">
-          <header class="header fixed-header w-95p m-b-5">
-            <nav class="navbar row-flex p-05">
-              <a href="/"
-                ><h3 id="logo"><em>in.notion</em></h3></a
-              >
-              <ul class="nav-items row-flex no-bullet">
-                <li class="btn nav-link-btn h3 m-r-1"><a href="#installation">Installation</a></li>
-                <li class="btn nav-link-btn h3 m-r-1"><a href="docs/alert/">Docs</a></li>
-                <li class="btn nav-link-btn h3 m-r-1"><a href="#connect">Connect</a></li>
+        <div class="demo col-flex full-wd m-b-3">
+          <header class="header fixed-header w-95p">
+            <nav class="navbar row-flex w-95p m-auto p-05">
+              <a class="m-l-3 text-shd"><h3 id="logo">in.notion</h3></a>
+              <ul class="nav-items row-flex w-40p no-bullet">
+                <li class="btn nav-link-btn cursor h3"><a href="pages/products.html">Shop</a></li>
+                <li class="btn nav-link-btn cursor h3"><a href="pages/products.html">Care products</a></li>
+                <li class="btn nav-link-btn cursor h3"><a>About</a></li>
               </ul>
-              <label class="field searchfield" for="search-text">
-                <span class="search-icon p-05"><i class="fa fa-search" aria-hidden="true"></i></span>
+              <label class="field searchfield w-20p" for="search-text">
+                <span class="search-icon cursor p-h-1"><i class="fa fa-search" aria-hidden="true"></i></span>
                 <input
                   type="search"
                   class="input search-nav reset-ip p-05"
-                  placeholder="search here"
+                  placeholder="Search here"
                   id="search-text"
                 />
               </label>
-              <ul class="row-flex no-bullet">
-                <li class="nav-icon-btn icon-btn rd-bdr grid-ctr wt-text">
-                  <a>
-                    <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
-                    <span class="nav-icon-text h6 wt-text">Wishlist</span>
-                  </a>
-                </li>
-                <li class="nav-icon-btn icon-btn rd-bdr grid-ctr wt-text">
-                  <a>
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <span class="nav-icon-text h6 wt-text">Cart</span>
-                  </a>
-                </li>
-                <li class="nav-icon-btn icon-btn rd-bdr grid-ctr wt-text">
-                  <a>
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <span class="nav-icon-text h6 wt-text">Profile</span>
-                  </a>
-                </li>
-              </ul>
-              <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr wt-text">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+              <div class="nav-icon-btns row-flex no-wrap">
+                <ul class="row-flex no-bullet">
+                  <li class="nav-icon-btn icon-btn rd-bdr grid-ctr wt-text m-r-3">
+                    <a href="pages/wishlist.html" class="badge-wrapper grid-ctr">
+                      <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
+                      <span class="nav-icon-text h6 cursor wt-text">Wishlist</span>
+                    </a>
+                  </li>
+                  <li class="nav-icon-btn icon-btn rd-bdr grid-ctr wt-text m-r-3">
+                    <a href="pages/wishlist.html" class="badge-wrapper grid-ctr">
+                      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                      <span class="nav-icon-text h6 cursor wt-text">Cart</span>
+                    </a>
+                  </li>
+                  <li class="nav-icon-btn icon-btn rd-bdr grid-ctr wt-text">
+                    <a href="pages/signup.html" class="grid-ctr">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                      <span class="nav-icon-text h6 cursor wt-text">Profile</span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="hamburger icon-toggle icon-btn rd-bdr grid-ctr wt-text m-r-1">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
               </div>
             </nav>
           </header>
@@ -830,7 +843,7 @@
 
       <!-- Typography -->
       <h2 class="m-2 title">Typography Component</h2>
-      <div class="container colored-container m-5 col-flex">
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
         <!-- Headings-->
         <h2 class="m-3">Headings</h2>
         <div class="demo col-flex align-start left-text h-30rm">
@@ -852,10 +865,10 @@
 
         <!-- Text Styles-->
         <h2 class="m-3">Text Styles</h2>
-        <div class="demo col-flex align-start left-text h-40rm">
-          <p class="h1">This is a xlarge text</p>
-          <p class="h2">This is a large text</p>
-          <p class="h3">This is a medium text</p>
+        <div class="demo col-flex align-start left-text">
+          <p class="h1 m-v-1">This is a xlarge text</p>
+          <p class="h2 m-v-1">This is a large text</p>
+          <p class="h3 m-v-1">This is a medium text</p>
           <p>This is a default paragraph</p>
           <p><small>This is relatively &lt;small&gt; text.</small></p>
           <p><del>This line of text is meant to be treated as no longer accurate.</del></p>
@@ -868,57 +881,57 @@
 
       <!-- Ratings Demo -->
       <h2 class="m-2 title">Ratings Components</h2>
-      <div class="container colored-container m-5 col-flex">
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
         <!-- RBasic Ratings-->
         <h2 class="m-3">Basic Ratings</h2>
         <div class="demo full-wd row-flex">
           <span class="rating">
             <label>
-              <input class="rating-input rating-star" type="checkbox" checked />
+              <input class="rating-input rating-star" type="checkbox" checked disabled />
               <i class="fa fa-star rating-icon" aria-hidden="true"></i>
             </label>
             <label>
-              <input class="rating-input rating-star" type="checkbox" checked />
+              <input class="rating-input rating-star" type="checkbox" checked disabled />
               <i class="fa fa-star rating-icon" aria-hidden="true"></i>
             </label>
             <label>
-              <input class="rating-input rating-star" type="checkbox" checked />
+              <input class="rating-input rating-star" type="checkbox" checked disabled />
               <i class="fa fa-star rating-icon" aria-hidden="true"></i>
             </label>
             <label>
-              <input class="rating-input rating-star" type="checkbox" checked />
+              <input class="rating-input rating-star" type="checkbox" checked disabled />
               <i class="fa fa-star rating-icon" aria-hidden="true"></i>
             </label>
             <label>
-              <input class="rating-input rating-star" type="checkbox" />
+              <input class="rating-input rating-star" type="checkbox" disabled />
               <i class="fa fa-star rating-icon" aria-hidden="true"></i>
             </label>
           </span>
 
           <span class="rating">
             <label>
-              <input class="rating-input rating-heart" type="checkbox" checked />
+              <input class="rating-input rating-heart" type="checkbox" checked disabled />
               <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
             </label>
             <label>
-              <input class="rating-input rating-heart" type="checkbox" checked />
+              <input class="rating-input rating-heart" type="checkbox" checked disabled />
               <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
             </label>
             <label>
-              <input class="rating-input rating-heart" type="checkbox" checked />
+              <input class="rating-input rating-heart" type="checkbox" checked disabled />
               <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
             </label>
             <label>
-              <input class="rating-input rating-heart" type="checkbox" checked />
+              <input class="rating-input rating-heart" type="checkbox" checked disabled />
               <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
             </label>
             <label>
-              <input class="rating-input rating-heart" type="checkbox" />
+              <input class="rating-input rating-heart" type="checkbox" disabled />
               <i class="fa fa-heart rating-icon" aria-hidden="true"></i>
             </label>
           </span>
 
-          <div class="rating-badge">
+          <div class="rating-badge box-shd">
             <span class="rating-number">5</span>
             <label>
               <i class="fa fa-star rating-icon" aria-hidden="true"></i>
@@ -956,6 +969,298 @@
           </span>
         </div>
       </div>
+
+      <!-- Modal Demo -->
+      <h2 class="m-2 title">Modal Components</h2>
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
+        <!-- Modal Components-->
+        <div class="demo full-wd row-flex">
+          <div class="modal grid-ctr">
+            <button class="card-icon-btn icon-btn rd-bdr close-btn modal-close-btn">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <img class="h-15rm w-15rm" src="assets/shopping-cart.png" alt="shopping-cart" />
+            <p>Thanks for shopping!</p>
+            <p class="sub-heading">Your order will take 1-2 hours to get confirmed.</p>
+            <button class="btn primary-btn m-1 w-50p">Back to site</button>
+          </div>
+        </div>
+        <!-- Live Modal Components-->
+        <h2 class="m-3">Live Modal Component Demo</h2>
+        <div class="demo full-wd row-flex">
+          <button class="btn primary-btn m-1 open-modal-btn">Open Modal</button>
+          <div class="modal-wrapper modal-wrapper-example grid-ctr">
+            <div class="modal grid-ctr">
+              <button class="card-icon-btn icon-btn rd-bdr close-btn modal-close-btn example-modal-close-btn">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </button>
+              <img class="h-15rm w-15rm" src="assets/shopping-cart.png" alt="shopping-cart" />
+              <p>Thanks for shopping!</p>
+              <p class="sub-heading">Your order will take 1-2 hours to get confirmed.</p>
+              <button class="btn primary-btn example-modal-close-btn m-1 w-50p">Back to site</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toast/Snackbar Demo -->
+      <h2 class="m-2 title">Toast/Snackbar Components</h2>
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
+        <!-- Modal Components-->
+        <div class="demo full-wd row-flex">
+          <div class="toast row-flex m-1 p-1">
+            <p class="toast-msg m-r-1">Default message!</p>
+            <div class="toast-action">
+              <i class="icon-toggle p-1 icon-btn grid-ctr rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="toast blue-content row-flex m-1 p-1">
+            <p class="toast-msg m-r-1">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+              Info message
+            </p>
+            <i class="icon-toggle p-1 icon-btn grid-ctr rd-bdr fa fa-times" aria-hidden="true"></i>
+          </div>
+          <div class="toast green-content row-flex m-1 p-1">
+            <p class="toast-msg m-r-1">
+              <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+              Success message
+            </p>
+            <i class="icon-toggle p-1 icon-btn grid-ctr rd-bdr fa fa-times" aria-hidden="true"></i>
+          </div>
+          <div class="toast yellow-content row-flex m-1 p-1">
+            <p class="toast-msg m-r-1">
+              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+              Warning message
+            </p>
+            <i class="icon-toggle p-1 icon-btn grid-ctr rd-bdr fa fa-times" aria-hidden="true"></i>
+          </div>
+          <div class="toast red-content row-flex m-1 p-1">
+            <p class="toast-msg m-r-1">
+              <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+              Error message
+            </p>
+            <div class="toast-action row-flex">
+              <a class="action-link toast-action-link">Try Again</a>
+              <i class="icon-toggle p-1 icon-btn grid-ctr rd-bdr fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Live Toast Components-->
+        <h2 class="m-3">Live Toast Component Demo</h2>
+        <div class="demo full-wd row-flex">
+          <button class="btn primary-btn m-1 open-toast-btn">Open Toast</button>
+          <div class="toast example-toast green-content row-flex m-1 p-1">
+            <p class="toast-msg m-r-1">
+              <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+              Success message
+            </p>
+            <i class="icon-toggle close-toast-btn p-1 icon-btn grid-ctr rd-bdr fa fa-times" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- List Demo -->
+      <h2 class="m-2 title">Lists Component</h2>
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
+        <!-- Unordered List -->
+        <h2 class="m-3">Unordered list</h2>
+        <div class="demo row-flex full-wd">
+          <ul class="p-2">
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+          </ul>
+          <ul class="list-style-circle p-2">
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+          </ul>
+          <ul class="list-style-square p-2">
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+          </ul>
+        </div>
+
+        <!-- Ordered List -->
+        <h2 class="m-3">Ordered list</h2>
+        <div class="demo row-flex full-wd">
+          <ol class="p-2">
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+          </ol>
+          <ol class="list-style-alpha p-2">
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+          </ol>
+          <ol class="list-style-roman p-2">
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+          </ol>
+          <ol class="list-style-roman p-2" reversed>
+            <li>Reversed list item 1</li>
+            <li>Reversed list item 2</li>
+            <li>Reversed list item 3</li>
+          </ol>
+        </div>
+
+        <!-- Simple List -->
+        <h2 class="m-3">Simple list</h2>
+        <div class="list-content sm-container w-20rm p-1 box-shd">
+          <ul class="no-bullet left-text full-wd">
+            <li class="list-content-item p-1">
+              <i class="fa fa-inbox m-r-1" aria-hidden="true"></i><span>Inbox</span>
+            </li>
+            <li class="list-content-item p-1"><i class="fa fa-star m-r-1"></i><span>Star</span></li>
+            <li class="list-content-item p-1"><i class="fa fa-paper-plane m-r-1"></i><span>Send Mail</span></li>
+            <li class="list-content-item p-1"><i class="fa fa-envelope m-r-1"></i><span>Drafts</span></li>
+          </ul>
+        </div>
+
+        <!-- Stacked List -->
+        <h2 class="m-3">Stacked list</h2>
+        <div class="list-stacked-content sm-container p-1 w-25p box-shd">
+          <ul class="no-bullet left-text full-wd">
+            <li class="list-content-item p-v-1 row-flex no-wrap">
+              <div class="avatar sm-avatar">
+                <img src="assets/user1.jpg" alt="user" />
+              </div>
+              <div>
+                <p>Neha</p>
+                <p class="sub-heading">nehagupta@gmail.com</p>
+              </div>
+            </li>
+            <li class="line-decoration"></li>
+            <li class="list-content-item p-v-1 row-flex no-wrap">
+              <div class="avatar sm-avatar">
+                <img src="assets/user1.jpg" alt="user" />
+              </div>
+              <div>
+                <p>Neha</p>
+                <p class="sub-heading">nehagupta@gmail.com</p>
+              </div>
+            </li>
+            <li class="line-decoration"></li>
+            <li class="list-content-item p-v-1 row-flex no-wrap">
+              <div class="avatar sm-avatar">
+                <img src="assets/user1.jpg" alt="user" />
+              </div>
+              <div>
+                <p>Neha</p>
+                <p class="sub-heading">nehagupta@gmail.com</p>
+              </div>
+            </li>
+            <li class="line-decoration"></li>
+            <li class="list-content-item p-v-1 row-flex no-wrap">
+              <div class="avatar sm-avatar">
+                <img src="assets/user1.jpg" alt="user" />
+              </div>
+              <div>
+                <p>Neha</p>
+                <p class="sub-heading">nehagupta@gmail.com</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Grid Demo -->
+      <h2 class="m-2 title">Grid Simplified</h2>
+      <div class="container colored-container m-v-5 w-95p m-h-auto col-flex">
+        <!-- 2 COLUMN GRID Layout -->
+        <h2 class="m-3">2 COLUMN GRID Layout</h2>
+        <div class="demo full-wd">
+          <div class="grid-2-col">
+            <div class="grid-item-one grid-ctr green-content h-20rm">Grid Item One</div>
+            <div class="grid-item-two grid-ctr blue-content h-20rm">Grid Item Two</div>
+          </div>
+        </div>
+        <!-- 3 COLUMN GRID Layout -->
+        <h2 class="m-3">3 COLUMN GRID Layout</h2>
+        <div class="demo full-wd">
+          <div class="grid-3-col">
+            <div class="grid-item-one grid-ctr green-content h-20rm">Grid Item One</div>
+            <div class="grid-item-two grid-ctr blue-content h-20rm">Grid Item Two</div>
+            <div class="grid-item-three grid-ctr yellow-content h-20rm">Grid Item Three</div>
+          </div>
+        </div>
+
+        <!-- 4 COLUMN GRID Layout -->
+        <h2 class="m-3">4 COLUMN GRID Layout</h2>
+        <div class="demo full-wd">
+          <div class="grid-4-col">
+            <div class="grid-item-one grid-ctr green-content h-20rm">Grid Item One</div>
+            <div class="grid-item-two grid-ctr blue-content h-20rm">Grid Item Two</div>
+            <div class="grid-item-three grid-ctr yellow-content h-20rm">Grid Item Three</div>
+            <div class="grid-item-four grid-ctr red-content h-20rm">Grid Item Four</div>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer class="connect footer p-3 col-flex">
+      <div class="contact-content row-flex w-90p m-b-1">
+        <div class="footer-item col-flex m-2">
+          <h3 class="m-b-3">INFORMATION 1</h3>
+          <ul class="footer-item-links left-text no-bullet">
+            <li class="m-b-1"><a class="grey-text cursor">Information 1</a></li>
+            <li class="m-b-1"><a class="grey-text cursor">Information 2</a></li>
+            <li class="m-b-1"><a class="grey-text cursor">Information 3</a></li>
+            <li class="m-b-1"><a class="grey-text cursor">Information 4</a></li>
+          </ul>
+        </div>
+        <div class="footer-item col-flex m-2">
+          <h3 class="m-b-3">INFORMATION 2</h3>
+          <ul class="footer-item-links left-text no-bullet">
+            <li class="m-b-1"><a class="grey-text cursor">Information 1</a></li>
+            <li class="m-b-1"><a class="grey-text cursor">Information 2</a></li>
+            <li class="m-b-1"><a class="grey-text cursor">Information 3</a></li>
+            <li class="m-b-1"><a class="grey-text cursor">Information 4</a></li>
+          </ul>
+        </div>
+        <div class="contact-action col-flex m-2">
+          <form
+            action="https://formspree.io/f/mknkoydw"
+            class="email-form m-b-1"
+            method="POST"
+            target="_blank"
+            class="contact-form"
+          >
+            <h3 class="left-text m-b-3">JOIN OUR COMMUNITY</h3>
+            <div class="field row-flex flex-start m-v-1">
+              <label class="row-flex no-wrap" for="email">
+                <input
+                  type="email"
+                  class="input email-input p-07"
+                  placeholder="Email us"
+                  name="_replyto"
+                  id="email"
+                  required=""
+                />
+                <button class="btn secondary-outline-btn" type="submit">Submit</button>
+              </label>
+            </div>
+          </form>
+          <div class="contact-socials left-text full-wd m-v-1">
+            <a class="icon-btn footer-icon grey-text p-1" href="mailto:nehaguptang.ng@gmail.com">
+              <i class="fa fa-envelope" title="envelope" alt="envelope"></i>
+            </a>
+            <a class="icon-btn footer-icon grey-text p-1" href="https://www.github.com/nayyyhaa">
+              <i class="fa fa-github" title="github" alt="github"></i>
+            </a>
+            <a class="icon-btn footer-icon grey-text p-1" href="https://www.twitter.com/nayyyhaa">
+              <i class="fa fa-twitter" title="twitter" alt="twitter"></i>
+            </a>
+            <a class="icon-btn footer-icon grey-text p-1" href="https://www.instagram.com/nehacode">
+              <i class="fa fa-instagram" title="instagram" alt="instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="m-t-3">Made with ❤️ by Neha Gupta</p>
+    </footer>
   </body>
 </html>

@@ -10,6 +10,7 @@
   color: var(--COLOR-COMPLEMENTARY-LIGHT);
 }
 
+.dark .list-content-item:hover,
 .dark .colored-text.bg::after,
 .dark .colored-bg::after,
 .dark .bg::before {
@@ -25,10 +26,18 @@
   background: var(--COLOR-PRIMARY-XLIGHT);
 }
 
-.dark .card {
+.dark .card,
+.dark .modal,
+.dark .sm-container {
   background: var(--COLOR-PRIMARY-XXXDARK);
 }
+
+.dark .card:hover {
+  box-shadow: 0.2rem 0.2rem 2.5rem var(--COLOR-GREY-TRANS);
+}
+
 .dark .primary-btn {
+  border: 0.2rem solid var(--COLOR-PRIMARY-DARK);
   background: var(--COLOR-PRIMARY-DARK);
   color: var(--COLOR-COMPLEMENTARY-LIGHT);
 }

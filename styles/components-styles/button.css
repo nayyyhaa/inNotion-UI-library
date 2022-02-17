@@ -18,6 +18,7 @@ button {
 
 .primary-btn {
   background: var(--COLOR-PRIMARY);
+  border: 0.2rem solid var(--COLOR-PRIMARY);
 }
 
 .primary-btn:hover {
@@ -50,6 +51,12 @@ button {
 
 .primary-icon-btn {
   background: initial;
+  color: var(--COLOR-PRIMARY);
+}
+
+.secondary-outline-btn {
+  background: var(--COLOR-COMPLEMENTARY-LIGHT);
+  border: 0.2rem solid var(--COLOR-PRIMARY);
   color: var(--COLOR-PRIMARY);
 }
 

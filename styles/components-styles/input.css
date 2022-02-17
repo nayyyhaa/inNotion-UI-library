@@ -55,9 +55,10 @@ select {
   opacity: 0.6;
 }
 
-.checkbox-ip {
-  width: 1.5rem;
-  height: 1.5rem;
+.radio-input,
+.checkbox-input {
+  position: relative;
+  top: 0.15rem;
 }
 
 /* form inputs */
