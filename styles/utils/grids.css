@@ -23,6 +23,11 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-item {
+  display: grid;
+  place-items: center;
+}
+
 @media screen and (max-width: 1450px) {
   .grid-4-col {
     display: grid;
