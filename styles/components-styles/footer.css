@@ -22,8 +22,8 @@
   border-radius: 4px 0 0 4px;
 }
 
-.footer-icon:hover {
-  transition: all 0.2s ease;
+.footer-icon {
+  transition: color 0.3s ease;
 }
 
 .footer-icon:hover {
