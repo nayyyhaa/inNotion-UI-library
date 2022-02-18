@@ -42,10 +42,6 @@
   transition: all 0.2s ease;
 }
 
-.nav-icon-btn {
-  margin-right: 1rem;
-}
-
 .nav-icon-btn:last-child {
   margin: 0;
 }
@@ -67,6 +63,7 @@
 }
 
 .search-nav {
+  padding: 0.75rem 0.5rem;
   background: white;
   border: none;
 }
@@ -189,6 +186,3 @@
   }
 }
 
-.search-nav {
-  padding: 0.75rem 0.5rem;
-}
