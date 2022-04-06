@@ -25,6 +25,7 @@
 @import url("components-styles/nav.css");
 @import url("components-styles/rating.css");
 @import url("components-styles/side-bar.css");
+@import url("components-styles/slider.css");
 @import url("components-styles/toast.css");
 
 /* dark mode & colors*/
@@ -55,7 +56,7 @@
   --COLOR-OFFWHITE: #e6e6e6;
   --COLOR-GREY-TRANS: rgba(240, 238, 238, 0.342);
   --COLOR-GREY: rgb(190, 190, 190);
-  --COLOR-GREY-DARK: rgb(68, 68, 68);
+  --COLOR-GREY-DARK: rgb(87, 62, 62);
   --COLOR-GREY-XDARK: #333;
 
   /* Others */
@@ -69,6 +70,7 @@
   --YELLOW-LIGHT: #fde7bd;
   --GREEN: #3ca120;
   --GREEN-LIGHT: #aefabe;
+  --COLOR-WHITE: white;
   --NO-COLOR: rgba(255, 255, 255, 0);
   --BLACK: #333;
   --BLACK-TRANS: rgb(0 0 0 / 65%);
