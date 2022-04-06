@@ -1,5 +1,5 @@
 .container {
-  background: white;
+  background: var(--COLOR-WHITE);
   min-height: 40vh;
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +9,7 @@
 }
 
 .sm-container {
-  background: white;
+  background: var(--COLOR-WHITE);
   align-items: flex-start;
   border-radius: 0.5rem;
 }
