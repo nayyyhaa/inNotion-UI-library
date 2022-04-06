@@ -1,6 +1,6 @@
 .card {
   border-radius: 0.5rem;
-  background: white;
+  background: var(--COLOR-WHITE);
   position: relative;
   border: 1px solid var(--COLOR-GREY);
   transition: box-shadow 0.3s ease;
@@ -51,7 +51,7 @@
 .card-overlay,
 .card-text-overlay,
 .card-text-overlay sub {
-  color: white;
+  color: var(--COLOR-WHITE);
 }
 
 .card-text-overlay {

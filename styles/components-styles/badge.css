@@ -13,10 +13,9 @@
   left: 65%;
   font-size: 1rem;
   font-weight: 700;
-  border: 0.2rem solid white;
+  border: 0.2rem solid var(--COLOR-WHITE);
   cursor: default;
 }
-
 
 /** badge sizes **/
 
