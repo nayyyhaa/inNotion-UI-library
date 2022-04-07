@@ -16,7 +16,7 @@
   height: 50vh;
   width: 100%;
   max-width: 60rem;
-  background: white;
+  background: var(--COLOR-WHITE);
   border-radius: 0.4rem;
   border: 1px solid var(--COLOR-GREY);
 }

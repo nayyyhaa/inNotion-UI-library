@@ -104,7 +104,7 @@
 .dark-mode::before {
   content: "\f186";
   font-family: "FontAwesome";
-  color: white;
+  color: var(--COLOR-WHITE);
 }
 
 .dark .primary-outline-btn {

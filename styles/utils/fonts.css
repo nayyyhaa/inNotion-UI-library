@@ -114,7 +114,7 @@ a {
 }
 
 .wt-text {
-  color: white;
+  color: var(--COLOR-WHITE);
 }
 
 .up-case {
@@ -182,4 +182,3 @@ code {
 .medium-font {
   font-weight: 400;
 }
-

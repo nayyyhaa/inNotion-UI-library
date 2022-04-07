@@ -1,7 +1,7 @@
 .avatar {
   border-radius: 50%;
-  border: 0.25rem solid white;
-  color: white;
+  border: 0.25rem solid var(--COLOR-WHITE);
+  color: var(--COLOR-WHITE);
   height: 5rem;
   width: 5rem;
   overflow: hidden;
