@@ -6,6 +6,7 @@
   background: var(--BLACK);
   color: white;
   height: auto;
+  z-index: 11;
   justify-content: space-between;
 }
 
